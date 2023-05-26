@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 闭包：函数嵌套函数，内部函数就是闭包
+// 正常情况下，函数执行完成，内部变量会销毁
+// (销毁：释放内存空间)
+// 闭包，内部函数没有执行完成，外部函数
+// 变量不会被销毁。
+// 应用：封装一段代码
+function outerFun(){
+    let a = 10;
+    function innerFun(){
+        console.log(a);
+    }
+    return innerFun;
+}
+
+let fun = outerFun();
+fun = null;
+
+let xz = (function(){
+    let a = 10;
+    let b = 20;
+    function add(){
+        return a + b;
+    }
+    function sub(){
+        return a - b;
+    }
+    return {
+        add,
+        sub
+    }
+})()
+
+let result1 = xz.add();
+let result2 = xz.sub();
+console.log(result1);
+console.log(result2);
+
+
+
+</script>
+</body>
+</html>

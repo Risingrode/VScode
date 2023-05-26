@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if isLogin %}
+        <p>欢迎，小明</p>
+    {% else %}
+        <p>请登录</p>
+    {% endif %}
+    <h1>{{str}}</h1>
+    {% for item in list %}
+        <p>{{item}}</p>
+    {% endfor %}
+    <script>
+        let p = document.querySelector("p");
+        p.onclick = function(){
+            alert("hello")
+        }
+    </script>
+</body>
+</html>

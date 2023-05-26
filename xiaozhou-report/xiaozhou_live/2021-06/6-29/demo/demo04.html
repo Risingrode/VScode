@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 博客系统，有普通用户，还有管理用户
+class User{
+    constructor(username,password){
+        this.username = username;
+        this.password = password;
+    }
+    login(){
+        console.log("登录")
+    }
+}
+
+class Admin extends User{
+    deletePerson(){
+        console.log("删除一个人")
+    }
+}
+
+let admin = new Admin();
+admin.deletePerson();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // const是常量的意思
+    const fun = function(){
+
+    }
+
+    const student = {
+        name:"小明",
+        age:2
+    }
+    Object.freeze(student);
+    student.name = "小红";
+    console.log(student.name);
+
+    // 定义对象和函数，用const
+    // 其他用let
+    // 永远不要用var
+
+
+</script>
+</body>
+</html>

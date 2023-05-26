@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 原型对象有什么用
+let date = new Date();
+
+Date.prototype.formate = function(){
+    let year = this.getFullYear();
+    let month = this.getMonth() + 1;
+    let date = this.getDate();
+    return `${year}年${month}月${date}日`
+}
+
+// 目标：输出2021年6月29日
+console.log(date.formate())
+</script>
+</body>
+</html>

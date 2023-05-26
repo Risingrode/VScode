@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .menu {
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+        }
+        
+        .menu li>p {
+            font-size: 40px;
+            font-family: KaiTi;
+        }
+        
+        .menu li {
+            list-style: none;
+            width: 80px;
+            height: 40px;
+            border: 1px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .click {
+            width: 80px;
+            height: 40px;
+            background-color: yellow;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /*逆时针*/
+            transform: rotate(45deg);
+            /*右下  确定一个圆心而已*/
+            transform-origin: -40px 40px;
+            transition: transform 0.5s;
+        }
+        
+        .menu li:hover .click {
+            /* 顺时针 */
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li>
+            <p class="show">首页</p>
+            <p class="click">首页</p>
+        </li>
+        <li>
+            <p class="show">视频</p>
+            <p class="click">视频</p>
+        </li>
+        <li>
+            <p class="show">电影</p>
+            <p class="click">电影</p>
+        </li>
+    </ul>
+</body>
+
+</html>

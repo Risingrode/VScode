@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input v-focus ref="inp" type="text">
+        <button>搜索</button>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = Vue.createApp({});
+        app.directive("focus", {
+            mounted(el) {
+                el.focus();
+            }
+        })
+        app.mount("#app")
+
+        /*
+            指令：
+            v-on:绑定事件 @
+            v-bind:绑定属性 ：
+            v-text:绑定文本
+            v-for:显示列表
+            v-if:条件判断
+        */
+    </script>
+</body>
+
+</html>

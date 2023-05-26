@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 400px;
+            border: 1px solid red;
+            margin: 0 auto;
+            /*上下为0 左右相同 达到居中效果*/
+            padding-left: 30px;
+            /*30px的内边距*/
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+        
+        .flowers {
+            width: 300px;
+            border: 2px solid blue;
+            margin: 0 auto;
+            margin-top: 50px;
+            /*其结果是分代码先后的*/
+        }
+        
+        .container ul,
+        .flowers ul {
+            list-style: inside;
+            /*列表在边距之内*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>你喜欢的水果</h1>
+        <ul>
+            <li>香蕉</li>
+            <li>苹果</li>
+            <li>橘子</li>
+        </ul>
+    </div>
+
+    <div class="flowers">
+        <h1>你喜欢的花朵</h1>
+        <ul>
+            <li>康乃馨</li>
+            <li>菊花</li>
+            <li>茶花</li>
+        </ul>
+    </div>
+</body>
+
+</html>

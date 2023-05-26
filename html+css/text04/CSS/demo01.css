@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    height: 60px;
+}
+
+.header .header_content {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.header .header_content .logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.header .header_content .nav li {
+    list-style: none;
+    /*去除黑点*/
+    float: left;
+    width: 114px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.header .header_content .nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.header .header_content .nav .active {
+    /*下边框*/
+    /*先搞一个默认值*/
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
+    /*使下边框在盒子内部，防止把其它内容挤跑*/
+}
+
+
+/*当鼠标在其上面时，下方显示下边框*/
+
+.header .header_content .nav li:hover {
+    border-bottom: 4px solid blue;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1260px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.container .content {
+    float: left;
+    width: 956px;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.container .slider {
+    float: right;
+    width: 100px;
+    border: 2px solid white;
+    box-sizing: border-box;
+}

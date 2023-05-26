@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 指令：vue提供的一些特殊的属性v-开头 -->
+        <h1 
+            v-bind:title="tit" 
+            v-text="msg"
+            v-on:click="showData"
+            >
+        </h1>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        // vue3的基本功能
+        Vue.createApp({
+            // 选项api(option api)
+            data(){
+                return {
+                    msg:"hello world",
+                    tit:"hello vue3"
+                }
+            },
+            methods:{
+                showData(){
+                    alert("hello Vue3")
+                }
+            }
+
+        }).mount("#app")
+
+
+
+        /* 
+            1. 如何操作html文本
+            2. 如何操作html属性（href,src）
+            3. 如何绑定事件
+        */
+    </script>
+</body>
+</html>

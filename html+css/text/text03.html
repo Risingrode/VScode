@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .menu>li {
+            margin: 30px 30px 0px 30px;
+            height: 40px;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .menu li>.show {
+            font-size: 40px;
+            font-family: KaiTi;
+            background-color: yellow;
+            transition: margin 0.8s;
+        }
+        
+        .menu li>.click {
+            font-size: 40px;
+            font-family: KaiTi;
+            background-color: red;
+        }
+        
+        .menu>li:hover>.show {
+            margin-top: -45px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li>
+            <p class="show">首页</p>
+            <p class="click">首页</p>
+        </li>
+        <li>
+            <p class="show">视频</p>
+            <p class="click">视频</p>
+        </li>
+        <li>
+            <p class="show">电影</p>
+            <p class="click">电影</p>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">hellow world</h1>
+    <button class="btn"> 1</button>
+    <button class="btn"> 帅比</button>
+    <button class="btn"> 3</button>
+
+    <script>
+        //DOM
+        //元素节点  属性节点    文本节点
+        //获取节点
+        let h1 = document.getElementById("title");
+        console.log(h1.innerHTML);
+        h1.innerHTML = "你好，世界";
+        //innerHTML可以设置某个文本内容
+        let btns = document.getElementsByClassName("btn");
+        //其返回值是一个dom节点的集合
+        console.log(btns);
+        for (let i in btns) {
+            //innerHTML单次只能改变一个节点
+            btns[i].innerHTML = "test";
+        }
+    </script>
+</body>
+
+</html>

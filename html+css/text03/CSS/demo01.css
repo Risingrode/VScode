@@ -1,0 +1,43 @@
+* {
+    /*防止其重合*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.list .img img {
+    width: 200px;
+    height: 200px;
+}
+
+.clear::before,
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.title {
+    width: 800px;
+    height: 30px;
+    border: 1px solid red;
+}
+
+.title h2 {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.title h2 a {
+    color: #aaa;
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.list .img {
+    float: left;
+}
+
+.list .describe {
+    float: left;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1 ref="title">{{msg}}</h1>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        // 组件的生命周期钩子（函数）
+        const app = Vue.createApp({
+            data(){
+                return {
+                    msg:"hello world"
+                }
+            },
+            // beforeCreate,created,beforeMount,mounted
+            beforeMount(){
+                console.log(this.msg);
+                console.log(this.$refs.title)
+            }
+        })
+        app.mount("#app")
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.container .fruit .banana::before {
+    content: "我爱吃";
+}
+
+.container .fruit .banana::after {
+    content: "哈哈哈";
+    color: red;
+}
+
+.container .fruit .banana,
+.container .fruit .a {
+    font-size: larger;
+}

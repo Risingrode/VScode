@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //NaN   not a Number
+        function fun(n=200,m=199){
+            return n+m;
+        }
+        console.log(fun(88));
+        //立即执行函数  代码封装    里面是局部变量   
+        (function(){
+            var a=10;
+            var b=22;
+            console.log(a+b);
+        })();
+
+        //作用域链  内部函数可以访问外部
+        //外部不可以访问内部
+        let str="hellow";
+        function fun1(){
+            let str="word";
+            let num=10;
+            function fun2(){//闭包函数
+                //内部函数未执行完，外部函数不销毁
+                console.log(str);
+                console.log(num);
+            }
+            fun2();
+        }
+        fun1();
+        console.log(str);
+
+    </script>
+</body>
+</html>

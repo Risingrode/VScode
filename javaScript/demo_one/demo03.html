@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*var a=2,b=3,c='+'
+                computer(a,b,c)
+            function computer(a,b,c){
+                switch(c){
+                    case '+':
+                        return console.log(a+b);
+                }
+            }*/
+
+        //对象
+        var cat = {
+            name: "猫咪",
+            age: 2,
+            sayname: function() {
+                console.log("我是" + this.name)
+            },
+            eat: function(food) {
+                console.log("吃" + food)
+            }
+        }
+
+        cat.name = "小黑"
+        console.log(cat.name)
+
+        console.log(cat["name"]) //该行不会
+
+        console.log(cat.sayname())
+        console.log(cat.eat("黄焖鸡"))
+
+        var student = null
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //解构赋值
+        let [n,m]=[10,20];
+        console.log(n);
+        console.log(m);
+
+        let xm={name:"小明",age:10};
+       /* function getname(obj){
+            return obj.name;
+        }
+        let result=getname(xm);
+        console.log(result);*/
+
+        //对象
+        function getname({name}){
+            return name;
+        }
+        let result=getname(xm);
+        console.log(result);
+
+        
+
+    </script>
+</body>
+</html>

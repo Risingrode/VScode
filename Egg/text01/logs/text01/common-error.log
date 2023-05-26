@@ -1,0 +1,17 @@
+2022-04-05 11:49:41,916 ERROR 17020 nodejs.ClusterClientNoResponseError: client no response in 5435431ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\VS_code代码\Egg\text01\node_modules\_cluster-client@3.1.0@cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+name: "ClusterClientNoResponseError"
+pid: 17020
+hostname: Lenovo-cw
+
+2022-04-05 11:51:54,836 ERROR 17020 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17020
+hostname: Lenovo-cw
+

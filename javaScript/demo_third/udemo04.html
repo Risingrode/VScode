@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .swiper {
+            /*整体容器*/
+            width: 640px;
+            height: 320px;
+            /*按钮隐藏*/
+            overflow: hidden;
+            /*参照物*/
+            position: relative;
+        }
+        
+        .image-container {
+            /*图片容器*/
+            width: 1920px;
+            height: 320px;
+            /*使其横向排列*/
+            display: flex;
+            /*图片延时器*/
+            transition: transform 0.8s;
+        }
+        
+        .image-container img {
+            /*图片模式*/
+            width: 640px;
+            height: 320px;
+        }
+        /* .image-container:hover {
+            /*图片移动效果
+            transform: translate(-640px);
+        } */
+        
+        .number-list {
+            /*绝对定位*/
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper">
+        <div class="image-container">
+            <img src="image/1.jpg" alt="">
+            <img src="image/2.png" alt="">
+            <img src="image/3.jpg" alt="">
+        </div>
+        <div class="number-list">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
+    </div>
+    <script>
+        let btnList = document.querySelectorAll(".numList-list button");
+        let container = document.querySelector(".image-container");
+        for (let i in btnList) {
+            btnList[i] = function() {
+                console.log(i);
+                container.style.transform = `translate(${-640*i}px)`;
+            }
+        }
+    </script>
+</body>
+
+</html>

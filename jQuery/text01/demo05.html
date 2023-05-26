@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container {
+            margin: 100px 80px;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            float: left;
+            display: block;
+        }
+        
+        .a {
+            border: 1px solid red;
+            background-color: blue;
+            box-sizing: border-box;
+        }
+        
+        .m {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box a">
+            <button>按钮1</button>
+        </div>
+        <div class="box a">
+            <button>按钮2</button>
+        </div>
+        <div class="box a">
+            <button>按钮3</button>
+        </div>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        //find获取子级
+        // $(".box").click(function() {
+        //     $(this).find("button").css("background-color", "red");
+        // })
+        //parent获取父级
+        $("button").click(function() {
+            $(this).parent().css("background", "red");
+            $(this).parent().siblings().css("background", "blue");
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height: 2000px;
+        }
+        
+        .head {
+            font-family: KaiTi;
+            font-size: 40px;
+            width: 200px;
+            height: 50px;
+            margin: 20px auto 20px auto;
+            border: 2px solid blue;
+        }
+        
+        .find {
+            width: 400px;
+            height: 60px;
+            border: 2px solid blue;
+            margin: 10px auto;
+        }
+        
+        .find .box .first {
+            border-bottom: 4px solid wheat;
+        }
+        
+        .find .box a {
+            font-size: 25px;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .find a:hover {
+            border-bottom: 4px solid wheat;
+        }
+        
+        .aside {
+            display: block;
+            float: right;
+            width: 166px;
+            height: 300px;
+            border: 2px solid blue;
+            margin: 10px auto;
+            margin-left: 10px;
+        }
+        
+        .foot {
+            float: right;
+            display: block;
+            width: 420px;
+            height: 500px;
+            border: 2px solid blue;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<!--H5 布局元素 相当于一个有语义的div
+    header :网页头部
+    nav: 导航栏
+    aside :侧标栏
+    section: 布局的一部分
+    artical :显示文章
+    footer :网页页脚-->
+
+<body>
+    <header class="head">阿威软件库</header>
+    <nav class="find">
+        <div class="box">
+            <a href="#" class="first">首页</a>
+            <a href="#">信息</a>
+            <a href="#">软件</a>
+            <a href="#">作业</a>
+            <a href="www.baidu.com">百度</a>
+        </div>
+    </nav>
+    <aside class="aside">侧标栏</aside>
+    <footer class="foot">网页页脚</footer>
+</body>
+
+</html>

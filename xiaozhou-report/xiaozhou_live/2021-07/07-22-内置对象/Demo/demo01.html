@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// Vscode
+// 8位的字符串yyyyMMdd，计算出这个日期是一年的第几天
+let str = "20211003";
+let reg = /(\d{4})(\d{2})(\d{2})/
+let arr = reg.exec(str);
+let targetDate = new Date(`${arr[1]}-${arr[2]}-${arr[3]}`);
+let startDate = new Date(`${arr[1]}-01-01`);
+let time = targetDate.getTime() - startDate.getTime();
+console.log(time / (1000 * 60 * 60 * 24) + 1)
+</script>
+</body>
+</html>

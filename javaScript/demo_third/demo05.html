@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>按钮</button>
+    <ul></ul>
+    <script>
+        //DOM节点分类
+        //元素节点（querySelector;querySelectorAll）
+        //文本节点（innerHTML）
+        //属性节点（element.src;element.id）
+        let btn = document.querySelector(`button`);
+        let ul = document.querySelector(`ul`);
+        btn.onclick = function() {
+            ul.innerHTML = `
+            <li>香蕉</li>
+            <li>苹果</li>
+            <li>橘子</li>
+            <li>真好吃啊！</li>
+            `
+        }
+    </script>
+</body>
+
+</html>

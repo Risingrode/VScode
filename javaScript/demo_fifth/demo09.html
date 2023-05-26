@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //五种原始类型  number string boolean object(null) undefind
+        //引用类型 (数组，集合等)  可以理解为引用类型本质相当于指针
+        let obj1 = {
+            name: "小明",
+            age: 18
+        };
+        let obj2 = obj1;
+        obj1.name = "小花";
+        console.log(obj1.name + " " + obj2.name); //全部变成小花，与其内存分布有
+        //可以用typeof()检测原始类型(其返回值为原始类型)
+        //用 date instanceof Date  (其返回值是bool)
+    </script>
+</body>
+
+</html>

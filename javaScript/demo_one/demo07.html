@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //获取当前时间
+        var d = new Date();
+        var year = d.getFullYear();
+        var mouth = d.getMonth();
+        console.log(mouth);
+        //时间戳  从99年到现在的毫秒数
+        console.log(d.getTime());
+
+        //延时器
+        setInterval(() => {
+            let a = new Date();
+            console.log(a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds())
+        }, 100)
+    </script>
+</body>
+
+</html>

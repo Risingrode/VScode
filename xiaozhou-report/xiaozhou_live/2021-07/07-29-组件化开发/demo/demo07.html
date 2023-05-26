@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return {
+                    list:["你好","亲爱的用户","很高兴见到你"],
+                    msg:""
+                }
+            },
+            created(){
+                this.showData();
+            },
+            methods:{
+                showData(){
+                    let i = 0;
+                    let t = setInterval(() => {
+                        this.msg = this.list[i];
+                        i++
+                        if(i === 3){
+                            clearInterval(t);
+                        }
+                    },500)
+                }
+            }
+        });
+        app.mount("#app")
+    </script>
+</body>
+</html>

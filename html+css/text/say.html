@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left,
+        .right {
+            height: 40px;
+            position: relative;
+            display: table;
+            text-align: center;
+            border-radius: 7px;
+            background-color: #9EEA6A;
+        }
+        
+        .right {
+            /*使左右的对话框分开*/
+            top: 40px;
+            left: 200px;
+        }
+        
+        .left>p,
+        .right>p {
+            /*使内容居中*/
+            display: table-cell;
+            vertical-align: middle;
+            /*垂直分布*/
+            padding: 0 10px;
+        }
+        
+        .left:before,
+        .right:after {
+            /*用伪类写出小三角形*/
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+            position: absolute;
+            top: 11px;
+        }
+        /*分别给左右两边的小三角形定位*/
+        
+        .left:before {
+            border-right: 8px solid #9EEA6A;
+            left: -16px;
+        }
+        
+        .right:after {
+            border-left: 8px solid #9EEA6A;
+            right: -16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <p>吃了吗</p>
+    </div>
+    <div class="right">
+        <p>吃过了，吃了红烧排骨和酸菜鱼</p>
+    </div>
+</body>
+
+</html>

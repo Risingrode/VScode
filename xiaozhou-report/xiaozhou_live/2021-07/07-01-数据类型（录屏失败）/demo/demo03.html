@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 原始类型和引用类型
+// 原始类型（值类型）（基本类型）
+// 1. 赋值的区别
+// 2. 对比的区别
+// 3. 传参的区别
+
+// let a = 10;
+// let b = a;
+// a = 20;
+// console.log(a);
+// console.log(b);
+
+// let student1 = {name:"小明"};
+// let student2 = student1;
+// student1.name = "小红";
+// console.log(student1.name)
+// console.log(student2.name)
+
+// 原始类型比较的是值是否相等
+// let a = 10;
+// let b = 10;
+// console.log(a === b);
+
+// 引用类型比较的是引用是否指向同一地址。
+// let student1 = {name:"小明"}
+// let student2 = {name:"小明"}
+// console.log(student1 == student2);
+
+// 原始类型传参，函数内部操作数据，不影响函数外部
+// 引用类型传参，内部影响外部
+// let a = {name:"小明"};
+// function fun(x){ //形参
+//     x.name = "小红"
+// }
+// fun(a); //实参
+// console.log(a);
+
+
+let a = [1,2,3,4];
+function insertData(a){
+    a.push(100)
+}
+insertData(a);
+
+console.log(a);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="name" placeholder="姓名">
+    <input type="text" class="age" placeholder="年龄">
+    <button>添加</button>
+    <script>
+        let inputName = document.querySelector(".name");
+        let inputAge = document.querySelector(".age");
+        let btn = document.querySelector("button");
+        let studentList = [];
+        class student {
+            constructor(name, age) {
+                this.age = age;
+                this.name = name;
+            }
+        }
+        btn.onclick = function() {
+            let stu = new student(inputName.value, inputAge.value);
+            studentList.push(stu);
+            console.log(studentList);
+        }
+    </script>
+</body>
+
+</html>

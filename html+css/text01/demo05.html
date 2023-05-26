@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 表单 -->
+    <form action="">
+        <!-- 点击标签 用户名,即可使文本框获取焦点 -->
+        <label for="username">用户名：</label>
+        <!-- 输入文本框 -->
+        <!-- placeholder  显示隐藏说明文字 -->
+        <input id="username" type="text" placeholder="用户名">
+        <!-- 对password进行操作 -->
+        <label for="password">密码：</label>
+        <!-- password 用于对密码进行加密 -->
+        <input id="password" type="password" placeholder="密码">
+        <select>
+            <option value="sex">男</option>
+            <option value="sex">女</option>
+        </select>
+        <!--checkbox 是副选框-->
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="submit" value="登录">
+        <input type="button" value="按钮">
+
+        <label>男</label>
+        <!--name 相同,把两个选择框绑定到一起-->
+        <input name="sex" type="radio">
+        <label>女</label>
+        <input name="sex" type="radio">
+
+    </form>
+</body>
+
+</html>

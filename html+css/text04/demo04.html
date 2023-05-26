@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * {
+            margin: 0px;
+            padding: 0px;
+        }
+         */
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            position: absolute;
+            /* 绝对定位   就定在这里 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*垂直水平居中*/
+        }
+        /*hover 鼠标移入事件*/
+        
+        .box:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>hellow</h1>
+    </div>
+</body>
+
+</html>

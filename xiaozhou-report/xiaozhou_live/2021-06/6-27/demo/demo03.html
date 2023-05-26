@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 获取奶茶的方法
+function getTea(){
+    return new Promise(function(resolve){
+        setTimeout(() => {
+            resolve("奶茶")
+        },1000)
+    }) 
+}
+
+function getHotpot(){
+    return new Promise(function(resolve){
+        setTimeout(() => {
+            resolve("火锅")
+        },2000)
+    })
+}
+
+// 先吃火锅，再喝奶茶
+// getHotpot().then(function(data){
+//     console.log(data);
+//     return getTea();
+// }).then(function(data){
+//     console.log(data);
+// })
+
+// async函数
+async function getData(){
+    // 直接获取resolve传递出来的异步数据。
+    let hotPot = await getHotpot();
+    console.log(hotPot);
+    let tea = await getTea();
+    console.log(tea);
+}
+getData();
+
+
+
+
+
+// 调用获取奶茶的方法
+
+// promise对象
+// resolve可以将异步数据传递出来
+// let p = new Promise(function(resolve){
+//     resolve("hello world")
+// })
+
+// // 通过then拿到异步数据
+// p.then(function(data){
+//     console.log(data);
+// })
+
+</script>
+</body>
+</html>

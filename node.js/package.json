@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cnpm": "^7.1.1",
+    "http-serve": "^1.0.1"
+  }
+}

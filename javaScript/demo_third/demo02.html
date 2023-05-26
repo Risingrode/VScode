@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">hellow world</h1>
+    <div>
+        <img src="image/1.jpg" alt="">
+    </div>
+    <button>1</button>
+    <button class=" btn">2</button>
+    <button>3</button>
+    <script>
+        //切换图片
+        //选择器
+        // let h1 = document.querySelector("h1");
+        // console.log(h1.id);
+        //设置属性
+        let btn = document.querySelector(".btn");
+        let img = document.querySelector("img");
+        //点击事件
+        // btn.onclick = function() {
+        //     img.src ="image/2.png";
+        // }
+        let imagesSrcList = ["image/1.jpg", "image/2.png", "image/3.jpg"];
+        let btns = document.querySelectorAll("button");
+        for (let i in btns) {
+            btns[i].onclick = function() {
+                img.src = imagesSrcList[i];
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <img :src="src" alt="">
+        <button 
+            v-for="item,index in list" 
+            @click="changePic(index)">
+                {{index + 1}}
+        </button>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        Vue.createApp({
+            data(){
+                return {
+                    src:"images/1.jpg",
+                    list:[
+                            "images/1.jpg",
+                            "images/2.jpg",
+                            "images/3.jpg",
+                            "images/4.jpg",
+                            "images/5.jpg",
+                        ]
+                }
+            },
+            methods:{
+                changePic(i){
+                    this.src = this.list[i];
+                }
+            }
+        }).mount("#app")
+    </script>
+</body>
+</html>

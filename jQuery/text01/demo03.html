@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        button {
+            width: 30px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>1</button>
+    <button>2</button>
+    <button class="aa">3</button>
+    <input type="button" value="input按钮">
+    <img src="image/1.jpg" alt="">
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $("button").click(function() {
+            $(this).css({
+                height: "100px",
+                width: "100px",
+                color: "red",
+
+            })
+        })
+
+        $("input").click(function() {
+            $(this).val("新的val值");
+        })
+        $("img").click(function() {
+            $(this).css({
+                width: "300px",
+                height: "300px"
+            })
+        })
+    </script>
+</body>
+
+</html>

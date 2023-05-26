@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //邮箱验证操作
+        var v="sndsshdss6688@168.com"
+        var vag=/^\w{5,12}@168\.com$/;
+        if(vag.test(v)){
+            console.log("验证成功！")
+        }
+        else{
+            console.log("验证失败！");
+        }
+        //去除指定字符
+        var reg=/[a-zA-Z]/g;//全局匹配
+        var s=v.replace("s",9);
+        console.log(s);
+        var s1=v.replace(reg,9);
+        console.log(s1);
+        var s3=v.replace(reg,"");//删除操作
+        console.log(s3);
+        
+    </script>
+</body>
+</html>

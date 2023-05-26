@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+const student1 = {
+    name:"小明",
+    age:2,
+    girlfriend:{
+        name:"小红"
+    }
+} 
+
+// 浅拷贝
+function copy(obj){
+    let newObj = {};
+    for(let i in obj){
+        if(obj[i] instanceof Object){
+            newObj[i] = copy(obj[i]);
+        }else{
+            newObj[i] = obj[i]
+        }
+        
+    };
+    return newObj;
+}
+
+const student2 = copy(student1);
+student1.girlfriend.name = "小花"
+console.log(student1);
+console.log(student2);
+
+
+</script> 
+</body>
+</html>

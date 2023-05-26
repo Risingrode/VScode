@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic-box img {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .pic-box {
+            /*父*/
+            width: 200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .list {
+            /*子*/
+            position: absolute;
+            /*这是相对于父类的绝对定位*/
+            top: 100px;
+            left: 40px;
+            color: white;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pic-box">
+        <img src="2.png" alt="">
+        <ul class="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+</body>
+
+</html>

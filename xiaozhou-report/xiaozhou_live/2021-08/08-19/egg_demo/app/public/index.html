@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <form @submit.prevent="insert">
+      <input type="text" v-model="fruit">
+      <button>添加</button>
+    </form>
+    <ul>
+      <li v-for="item,index in list">
+        {{item}}
+        <button @click="del(index)">删除</button>
+        <button @click="upd(index)">修改</button>
+      </li>
+    </ul>
+  </div>
+  
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  Vue.createApp({
+    data(){
+      return {
+        list:[],
+        fruit:""
+      }
+    },
+    mounted(){
+      this.getData();
+    },
+    methods:{
+      getData(){
+        axios.get("/fruit")
+        .then((res) => {
+          this.list = res.data;
+        })
+      },
+      insert(){
+        axios.post("/fruit",{fruit:this.fruit})
+        .then(res => {
+          console.log(res.data);
+          this.getData();
+        })
+      },
+      // 删除
+      del(i){
+        axios.delete(`/fruit/${i}`)
+        .then(res => {
+          this.getData();
+        })
+      },
+      // 修改
+      upd(i){
+        axios.put(`/fruit/${i}`,{fruit:this.fruit})
+        .then(res => {
+          this.getData();
+        })
+      }
+    }
+  }).mount("#app")
+</script>
+</body>
+
+</html>

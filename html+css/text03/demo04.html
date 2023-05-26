@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*CSS定位*/
+        /*绝对定位 absolute 脱离文档流 参照物为浏览器页面左上角*/
+        /*相对定位 relative 不脱离文档流 相对原来位置偏离*/
+        /*固定定位 fixed 脱离文档流 固定在浏览器当前页面某一位置*/
+        /*坐标属性(只对定位元素起作用)：top ,left,right,bottom,z-index*/
+        
+        body {
+            height: 2000px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid blue;
+        }
+        
+        .pos {
+            /*position: absolute;*/
+            /*position: relative;*/
+            position: fixed;
+            /* top: 50px;*/
+            left: 50px;
+            z-index: 9;
+            /*可以控制该元素谁在谁之上 数值大的在前方显示*/
+        }
+        
+        .pos-ab {
+            position: absolate;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">1</div>
+    <div class="box pos">2</div>
+    <div class="box pos-ab">3</div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!-- 
+总收入：50000
+
+不交税：5000
+3%缴纳：36000 * 3% = 1080
+10%：9000 * 10% = 900
+
+速算扣除数
+
+应交税的部分*税率：45000 * 10% = 4500
+通过速算扣除数计算应缴金额：4500 - 2520 = 1980
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <h1></h1>
+    <button>计算</button>
+    <script>
+        document.querySelector("button").onclick = function(){
+            let salary = Number(document.querySelector("input").value);
+            document.querySelector("h1").innerHTML = computed(salary);
+        }
+
+        function computed(salary){
+            
+            let tax;
+            let salaryForTax = salary - 5000;
+            console.log(salaryForTax)
+            if(salaryForTax>5000 && salaryForTax<= 36000){
+                tax = salaryForTax * 0.03
+            }else if(salaryForTax>36000 && salaryForTax<144000){
+                tax = salaryForTax * 0.1 - 2520
+            }else if(salaryForTax>144000 && salaryForTax<300000){
+                tax = salaryForTax * 0.2 - 16920
+            }else if(salaryForTax>300000 && salaryForTax<420000){
+                tax = salaryForTax * 0.25 - 31920
+            }else if(salaryForTax>420000 && salaryForTax<660000){
+                tax = salaryForTax * 0.3 - 52920
+            }else if(salaryForTax>660000 && salaryForTax<960000){
+                tax = salaryForTax * 0.35 - 85920
+            }else if(salaryForTax>960000){
+                tax = salaryForTax * 0.45 - 181920
+            }else{
+                tax = 0;
+            }
+            return tax;
+        }
+    </script>
+</body>
+
+</html>

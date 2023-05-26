@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 属性的简写
+// function fun(){
+//     let name = "小明";
+//     let age = 2;
+//     return {name,age}
+// }
+// const sm = fun();
+// console.log(sm.name);
+// 方法的简写
+
+let str = "hello world";
+
+const stu = {
+    name:"小明",
+    [str]:2,
+    sayName(){
+        console.log("我是"+this.name)
+    }
+}
+
+console.log(stu[str])
+
+</script>
+</body>
+</html>

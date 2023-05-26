@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="按钮1">
+    <input type="button" value="按钮2">
+    <br>
+    <!-- <button>1</button>
+    <button>2</button>
+    <button>3</button> -->
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        /*$()包装，把dom对象包装成jQuery对象，之后可以使用jquery*/
+        $("input").click(function() {
+            //DOM接口 dom.value();
+            // console.log($("input"));
+            console.log(this.value);
+            //通过$可以将dom对象转换成jQuery
+            console.log($(this).val());
+        })
+
+        // $("button").click(function() {
+        //     console.log($(this).index());
+        // })
+    </script>
+
+</body>
+
+</html>

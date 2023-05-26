@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        
+        .medium {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        
+        .small {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <div class="medium">
+            <div class="small">
+            </div>
+        </div>
+    </div>
+    <script>
+        let big = document.querySelector(".big");
+        let medium = document.querySelector(".medium");
+        let small = document.querySelector(".small");
+        //从内到外输出
+        //事件捕获(true)，事件冒泡(false)
+        big.addEventListener("click", function(e) {
+                console.log("big");
+                e.stopPropagation();
+            }, false) //默认为false，所以false 可加可不加
+        medium.addEventListener("click", function(e) {
+            console.log("medium");
+            e.stopPropagation();
+        })
+        small.addEventListener("click", function(e) {
+            console.log("small");
+            e.stopPropagation(); //阻止事件冒泡执行
+        })
+    </script>
+
+</body>
+
+</html>

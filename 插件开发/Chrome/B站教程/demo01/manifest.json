@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "hellowWorld",
+    "version": "1.0",
+    "description": "这是一个插件",
+    "icons": {
+        "128": "img/logo.png",
+        "48": "img/logo.png",
+        "16": "img/logo.png"
+    },
+    "browser_action": {
+        "default_icon": "img/logo.png",
+        "default_popup": "popup.html"
+    }
+}

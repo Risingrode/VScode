@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .container {
+            display: flex;
+            margin-top: 100px;
+            background-color: yellow;
+            width: 800px;
+            height: 300px;
+        }
+        
+        .item {
+            background-color: red;
+            border: 1px solid blue;
+            /* flex-grow: 1; */
+            /* width: 300px; */
+            flex: 1;
+        }
+        
+        .big {
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            flex: 2;
+            height: 200px;
+            align-self: center;
+            /*对某一个flex项目起作用，函数与align一样*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">123</div>
+        <div class="item">454</div>
+        <div class="item big">666</div>
+        <div class="item">454</div>
+        <div class="item">666</div>
+    </div>
+</body>
+
+</html>

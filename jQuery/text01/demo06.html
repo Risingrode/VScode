@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fruit-list {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" value="">
+    <button>添加</button>
+    <ul class="fruit-list">
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>鸭梨</li>
+    </ul>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $("li").click(function() {
+            $(this).remove();
+        })
+        $("button").click(function() {
+                let value = $("input").val();
+                let li = $(`<li>${value}</li>`);
+                $(".fruit-list").append(li);
+            })
+            //事件委托 :把子级的事件委托给父级处理
+        $(".fruit-list").on("click", "li", function() {
+            $(this).remove();
+        })
+    </script>
+</body>
+
+</html>

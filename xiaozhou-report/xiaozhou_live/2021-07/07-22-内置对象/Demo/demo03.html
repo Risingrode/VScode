@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 实现一个方法cosnt date =  new Date();
+// date.formate(); 可以得到  yyyy年mm月dd日
+
+Date.prototype.formate = function(){
+    let year = this.getFullYear();
+    let month = this.getMonth() + 1;
+    let date = this.getDate();
+    return `${year}年${month}月${date}日`
+}
+const date = new Date("2025 08 15");
+console.log(date.formate())
+
+
+
+
+</script>
+</body>
+</html>

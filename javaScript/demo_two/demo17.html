@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //继承
+        const Animal = function(name) {
+            this.name = name;
+        }
+
+        function Dog(name) {
+            this.name = name;
+        }
+        Dog.prototype = new Animal();
+        var dog = new Dog("小可爱");
+        dog.sayName();
+
+        class Cat {
+            constructor(name, age) { //构造器
+                this.name = name;
+                this.age = age;
+            }
+            sayName() {
+                console.log(`我是${this.name}`);
+            }
+        }
+
+        var cat = new Cat("猫咪", 18);
+        cat.sayName();
+    </script>
+</body>
+
+</html>

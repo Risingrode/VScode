@@ -1,0 +1,26 @@
+.textSty, .footer .title, .container .title, .header .title {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
+.header {
+  width: 1000px;
+  height: 80px;
+  background-color: blue;
+  margin: 0 auto;
+}
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: blue;
+  margin: 0 auto;
+}
+.footer {
+  width: 1000px;
+  height: 80px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.css.map */

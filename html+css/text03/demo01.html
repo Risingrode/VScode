@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*多元素清除浮动   用伪元素*/
+        /*如果要清除多个div文件浮动，
+        将所有文件移入一个div文件中，
+        命名class,再进行以下操作*/
+        
+        .clear::before,
+        .clear::after {
+            content: "测试";
+            /* 把添加的都转化成块元素 */
+            display: block;
+            clear: both;
+        }
+        
+        .content {
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+            float: left;
+        }
+        
+        .aside {
+            width: 100px;
+            height: 200px;
+            border: 1px solid blue;
+            float: left;
+        }
+        
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            float: left;
+        }
+        
+        .clear {
+            clear: both;
+            /* float: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">内容</div>
+    <div class="aside">边栏</div>
+    <!--清除浮动造成的影响-->
+    <div class="clear">秀儿</div>
+    <div class="box"></div>
+</body>
+
+</html>

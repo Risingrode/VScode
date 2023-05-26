@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        //这里是写js代码的地方!!!
+        alert("这是弹窗！！！");
+        //注意：写函数时，必须要有函数调用
+        /*console.log(fun(9,8));
+        function fun(n,m){
+            return n+m;
+        }*/
+        // let d=new Date();
+        // console.log(d.getFullYear()+d.getMonth()+d.getDay());
+        Date.prototype.dateFormat = function() {
+            let year = this.getFullYear();
+            let mouth = this.getMonth();
+
+            return `${year}年${mouth}月${this.getDay()}日`;
+        }
+
+        let d = new Date("1999-02-01");
+        let result = d.dateFormat();
+        console.log(result);
+
+        //对象
+        var cat = {
+                name: "猫咪",
+                age: 2,
+                sayname: function() {
+                    console.log("我是" + this.name)
+                },
+                eat: function(food) {
+                    console.log("吃" + food)
+                }
+            }
+            //数组和普通一样   length  push  sort
+        var newvector = vector.filter(function(item) { //筛选函数   该代码可以用箭头函数简写
+            if (item > 3) {
+                return item;
+            }
+        });
+        //可以看成类数组
+        var list = [{
+                name: "小明",
+                age: 16,
+                sex: "男"
+            }, {
+                name: "小花",
+                age: 16,
+                sex: "女"
+            }, {
+                name: "小黑",
+                age: 16,
+                sex: "男"
+            }]
+            //map容器
+        list.map(function(value, index) {
+            console.log("第" + (index + 1) + "元素是：" + value) //索引
+        });
+
+        //在字符间加上-
+        var s = ["o", "e", "u", "p"];
+        var s1 = s.join("-");
+        console.log(s1);
+        //去掉-
+        var s3 = "2022-02-02";
+        var s2 = s3.split("-");
+        console.log(s2); //s2 是字符串数组
+
+        //数学函数
+        var n = 3.14;
+        //向下取整
+        console.log(Math.floor(n));
+        //获取0~1的随机数
+        console.log(Math.random());
+
+        //时间
+        var d = new Date();
+        var year = d.getFullYear();
+        var mouth = d.getMonth();
+        console.log(mouth);
+
+        //延时器
+        setInterval(() => {
+            let a = new Date();
+            console.log(a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds())
+        }, 100)
+
+        //  \w代表数字，字母，下划线
+        //邮箱验证操作
+        var v = "sndsshdss6688@168.com"
+        var vag = /^\w{5,12}@168\.com$/; //花括号里是匹配位数
+        if (vag.test(v)) {
+            console.log("验证成功！")
+        }
+        var s = v.replace("s", 9);
+        var s3 = v.replace(reg, ""); //删除操作
+
+        //切割操作
+        var str = "2019-12-01";
+        //（） 作用是分割
+        var reg = /^(\d{4})-(\d{2})-(\d{2})$/;
+        var result = reg.exec(str); //exec返回值是值
+        console.log(result[0]);
+        console.log(result[1]);
+        console.log(result[2]);
+
+        //let 声明变量存在块级作用域概念
+
+        //字符串既可以用单引号，也可以用双引号
+        var n = '我是"超人"'
+        console.log(n);
+        let p = `小
+        可爱`; //反引号。可以换行
+
+        //模板字符串
+        //嵌入变量
+        let result = `${year}年${month}月${day}日`;
+        console.log(result);
+
+        function getObject() {
+            return {
+                name: "小明"
+            };
+        }
+        const xm = getObject(); //返回值要单独去接
+        console.log(xm); //此时xm是地址，内容可以修改，如果为普通数值，则不可以修改
+        xm.name = "小花";
+        console.log(xm);
+
+        //解构赋值
+        let [n, m] = [10, 20]; //对号入座呗！
+
+        //对象
+        let xm = {
+            name: "小明",
+            age: 10
+        };
+
+        function getname(obj) {
+            return obj.name;
+        }
+        let result = getname(xm);
+        console.log(result);
+        //不可改变对象，行为与属性均用：表示
+        const cat = {
+            name: "猫咪",
+            sayName: function() {
+                console.log(this.name);
+            }
+        }
+        cat.sayName();
+
+        //立即执行函数  代码封装    里面是局部变量   
+        (function() {
+            var b = 22;
+            console.log(b);
+        })(); //两个小括号，第一个括号里面是函数
+
+        //作用域链  内部函数可以访问外部
+        //外部不可以访问内部
+        let str = "hellow";
+
+        function fun1() {
+            let str = "word";
+            let num = 10;
+
+            function fun2() { //闭包函数
+                //内部函数未执行完，外部函数不销毁
+                console.log(str);
+                console.log(num);
+            }
+            fun2();
+        }
+
+        fun1();
+        console.log(str);
+
+        //箭头函数
+        const fun = (x) => x * x;
+        let re = fun(2);
+        //普通函数指向的是调用该函数的对象
+        //箭头函数：在哪里定义,this就指向谁
+
+        //prototype是构造函数的属性
+        //可以进行扩展方法
+        var arr = [3, 4, 5]; //arr为特殊数组符
+        Array.prototype.saylen = function() {
+            console.log(`我是一个数组，我的长度是${this.length}`);
+        }
+
+        //类
+        class Cat {
+            constructor(name, age) { //构造器
+                this.name = name;
+                this.age = age;
+            }
+            sayName() {
+                console.log(`我是${this.name}`);
+            }
+        }
+
+        //继承 关键字:extends
+        //super用来调用父类构造器（在子类中执行）
+
+        let h1 = document.getElementById("title"); //获取单个节点
+        let btns = document.getElementsByClassName("btn"); //获取的是节点的集合
+        h1.innerHTML = "你好，世界"; //innerHTML可以设置某个文本内容
+
+
+        let h1 = document.querySelector("#title");
+        //在主题前面加上#
+        h1.innerHTML = "你好，世界";
+        let btns = document.querySelectorAll(".btn");
+        //btn前面要加上.
+        let btn = document.querySelectorAll("button");
+
+        //照片切换
+        let imagesSrcList = ["image/1.jpg", "image/2.png", "image/3.jpg"];
+
+        //标题点击事件
+        //className改变背景颜色
+        this.className = ""; //此处是背景颜色的封装包
+
+
+        //3-4
+    </script>
+</body>
+
+</html>

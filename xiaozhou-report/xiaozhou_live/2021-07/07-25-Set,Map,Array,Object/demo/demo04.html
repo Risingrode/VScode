@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// WeakSet
+/* 
+    1. weakSet只能存放对象
+    2. 不能遍历
+    3. 如果weakSet外没有对象的引用，对象会被垃圾回收
+*/
+// vscode
+let set = new WeakSet();
+let student1 = {name:"小明"}
+let student2 = {name:"小红"}
+set.add(student1);
+set.add(student2);
+student1 = null;
+setTimeout(() => {
+    console.log(set);
+},10000)
+//Set WeakSet Map WeakMap
+
+
+
+
+</script>
+</body>
+</html>

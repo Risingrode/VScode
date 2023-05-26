@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{name}}</h1>
+        <button @click="getName">点名</button>
+    </div>
+<script src="vue.js"></script>
+<script>
+new Vue({
+    el:"#app",
+    data:{
+        name:"王二狗",
+        list:["张三",
+        "李四",
+        "王二狗",
+        "小明",
+        "小红",
+        "小红",
+        "小红",
+        "小红",
+        "小红",
+        "小红",
+        "小红",
+        "小红",
+        "小红",
+        "小红",
+     ]
+    },
+    methods:{
+        getName(){
+            let i = 0;
+            let t = setInterval(() => {
+                let number = Math.floor(Math.random() * 5);
+                this.name = this.list[number];
+                i++
+                console.log(i)
+                if(i == 20){
+                    clearInterval(t);
+                }
+            },100)
+        }
+    }
+})
+</script>
+</body>
+</html>

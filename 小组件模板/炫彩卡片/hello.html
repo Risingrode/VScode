@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>hello.md</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+	<style>
+		/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+		/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+		body {
+			font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+			font-size: var(--vscode-markdown-font-size, 14px);
+			padding: 0 26px;
+			line-height: var(--vscode-markdown-line-height, 22px);
+			word-wrap: break-word;
+		}
+
+		#code-csp-warning {
+			position: fixed;
+			top: 0;
+			right: 0;
+			color: white;
+			margin: 16px;
+			text-align: center;
+			font-size: 12px;
+			font-family: sans-serif;
+			background-color: #444444;
+			cursor: pointer;
+			padding: 6px;
+			box-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+		}
+
+		#code-csp-warning:hover {
+			text-decoration: none;
+			background-color: #007acc;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+		}
+
+		body.scrollBeyondLastLine {
+			margin-bottom: calc(100vh - 22px);
+		}
+
+		body.showEditorSelection .code-line {
+			position: relative;
+		}
+
+		body.showEditorSelection .code-active-line:before,
+		body.showEditorSelection .code-line:hover:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -12px;
+			height: 100%;
+		}
+
+		body.showEditorSelection li.code-active-line:before,
+		body.showEditorSelection li.code-line:hover:before {
+			left: -30px;
+		}
+
+		.vscode-light.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(0, 0, 0, 0.15);
+		}
+
+		.vscode-light.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(0, 0, 0, 0.40);
+		}
+
+		.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+			border-left: none;
+		}
+
+		.vscode-dark.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(255, 255, 255, 0.4);
+		}
+
+		.vscode-dark.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(255, 255, 255, 0.60);
+		}
+
+		.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+			border-left: none;
+		}
+
+		.vscode-high-contrast.showEditorSelection .code-active-line:before {
+			border-left: 3px solid rgba(255, 160, 0, 0.7);
+		}
+
+		.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+			border-left: 3px solid rgba(255, 160, 0, 1);
+		}
+
+		.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+			border-left: none;
+		}
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		a:focus,
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: 1px solid -webkit-focus-ring-color;
+			outline-offset: -1px;
+		}
+
+		hr {
+			border: 0;
+			height: 2px;
+			border-bottom: 2px solid;
+		}
+
+		h1 {
+			padding-bottom: 0.3em;
+			line-height: 1.2;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-weight: normal;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table>thead>tr>th {
+			text-align: left;
+			border-bottom: 1px solid;
+		}
+
+		table>thead>tr>th,
+		table>thead>tr>td,
+		table>tbody>tr>th,
+		table>tbody>tr>td {
+			padding: 5px 10px;
+		}
+
+		table>tbody>tr+tr>td {
+			border-top: 1px solid;
+		}
+
+		blockquote {
+			margin: 0 7px 0 5px;
+			padding: 0 16px 0 10px;
+			border-left-width: 5px;
+			border-left-style: solid;
+		}
+
+		code {
+			font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+			font-size: 1em;
+			line-height: 1.357em;
+		}
+
+		body.wordWrap pre {
+			white-space: pre-wrap;
+		}
+
+		pre:not(.hljs),
+		pre.hljs code>div {
+			padding: 16px;
+			border-radius: 3px;
+			overflow: auto;
+		}
+
+		pre code {
+			color: var(--vscode-editor-foreground);
+			tab-size: 4;
+		}
+
+		/** Theming */
+
+		.vscode-light pre {
+			background-color: rgba(220, 220, 220, 0.4);
+		}
+
+		.vscode-dark pre {
+			background-color: rgba(10, 10, 10, 0.4);
+		}
+
+		.vscode-high-contrast pre {
+			background-color: rgb(0, 0, 0);
+		}
+
+		.vscode-high-contrast h1 {
+			border-color: rgb(0, 0, 0);
+		}
+
+		.vscode-light table>thead>tr>th {
+			border-color: rgba(0, 0, 0, 0.69);
+		}
+
+		.vscode-dark table>thead>tr>th {
+			border-color: rgba(255, 255, 255, 0.69);
+		}
+
+		.vscode-light h1,
+		.vscode-light hr,
+		.vscode-light table>tbody>tr+tr>td {
+			border-color: rgba(0, 0, 0, 0.18);
+		}
+
+		.vscode-dark h1,
+		.vscode-dark hr,
+		.vscode-dark table>tbody>tr+tr>td {
+			border-color: rgba(255, 255, 255, 0.18);
+		}
+	</style>
+
+	<style>
+		/* Tomorrow Theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+		/* Tomorrow Comment */
+		.hljs-comment,
+		.hljs-quote {
+			color: #8e908c;
+		}
+
+		/* Tomorrow Red */
+		.hljs-variable,
+		.hljs-template-variable,
+		.hljs-tag,
+		.hljs-name,
+		.hljs-selector-id,
+		.hljs-selector-class,
+		.hljs-regexp,
+		.hljs-deletion {
+			color: #c82829;
+		}
+
+		/* Tomorrow Orange */
+		.hljs-number,
+		.hljs-built_in,
+		.hljs-builtin-name,
+		.hljs-literal,
+		.hljs-type,
+		.hljs-params,
+		.hljs-meta,
+		.hljs-link {
+			color: #f5871f;
+		}
+
+		/* Tomorrow Yellow */
+		.hljs-attribute {
+			color: #eab700;
+		}
+
+		/* Tomorrow Green */
+		.hljs-string,
+		.hljs-symbol,
+		.hljs-bullet,
+		.hljs-addition {
+			color: #718c00;
+		}
+
+		/* Tomorrow Blue */
+		.hljs-title,
+		.hljs-section {
+			color: #4271ae;
+		}
+
+		/* Tomorrow Purple */
+		.hljs-keyword,
+		.hljs-selector-tag {
+			color: #8959a8;
+		}
+
+		.hljs {
+			display: block;
+			overflow-x: auto;
+			color: #4d4d4c;
+			padding: 0.5em;
+		}
+
+		.hljs-emphasis {
+			font-style: italic;
+		}
+
+		.hljs-strong {
+			font-weight: bold;
+		}
+	</style>
+
+	<style>
+		/*
+ * Markdown PDF CSS
+ */
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+			padding: 0 12px;
+		}
+
+		pre {
+			background-color: #f8f8f8;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			overflow-x: auto;
+			white-space: pre-wrap;
+			overflow-wrap: break-word;
+		}
+
+		pre:not(.hljs) {
+			padding: 23px;
+			line-height: 19px;
+		}
+
+		blockquote {
+			background: rgba(127, 127, 127, 0.1);
+			border-color: rgba(0, 122, 204, 0.5);
+		}
+
+		.emoji {
+			height: 1.4em;
+		}
+
+		code {
+			font-size: 14px;
+			line-height: 19px;
+		}
+
+		/* for inline code */
+		:not(pre):not(.hljs)>code {
+			color: #C9AE75;
+			/* Change the old color so it seems less like an error */
+			font-size: inherit;
+		}
+
+		/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+		.page {
+			page-break-after: always;
+		}
+	</style>
+
+	<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+
+<body>
+	<script>
+		mermaid.initialize({
+			startOnLoad: true,
+			theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+				? 'dark'
+				: 'default'
+		});
+	</script>
+	<h1 id="%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98--%E8%B4%AA%E5%BF%83%E9%97%AE%E9%A2%98--dijkstra">背包问题 + 贪心问题 + Dijkstra
+	</h1>
+	<h2 id="01%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0">01背包问题描述</h2>
+	<blockquote>
+		<p>有n个物品和一个容量为m的背包，每个物品只能选或不选，第i个物品的体积为v[i]，价值为w[i]，求解将哪些物品装入背包可使这些物品的体积总和不超过背包容量，且价值总和最大。</p>
+	</blockquote>
+	<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">1010</span>;
+<span class="hljs-keyword">int</span> n, m;
+<span class="hljs-keyword">int</span> v[N], w[N];
+<span class="hljs-keyword">int</span> f[N][N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i ++ ) <span class="hljs-built_in">cin</span> &gt;&gt; v[i] &gt;&gt; w[i];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i ++ )
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt;= m; j ++ )
+        {
+            f[i][j] = f[i - <span class="hljs-number">1</span>][j]; <span class="hljs-comment">// 初始化</span>
+            <span class="hljs-keyword">if</span> (j &gt;= v[i]) f[i][j] = <span class="hljs-built_in">max</span>(f[i][j], f[i - <span class="hljs-number">1</span>][j - v[i]] + w[i]); <span class="hljs-comment">// 转移方程</span>
+        }
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; f[n][m] &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// 输出结果</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</div></code></pre>
+	<blockquote>
+		<p>以下是优化成一维</p>
+	</blockquote>
+	<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">1010</span>;
+<span class="hljs-keyword">int</span> n, m;
+<span class="hljs-keyword">int</span> v[N], w[N];
+<span class="hljs-keyword">int</span> f[N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i ++ ) <span class="hljs-built_in">cin</span> &gt;&gt; v[i] &gt;&gt; w[i];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i ++ )
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = m; j &gt;= v[i]; j -- )
+            f[j] = <span class="hljs-built_in">max</span>(f[j], f[j - v[i]] + w[i]);
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; f[m] &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// 输出结果</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</div></code></pre>
+	<pre class="hljs"><code><div>// 测试数据1
+// 输入：
+// 4 5
+// 1 2
+// 2 4
+// 3 4
+// 4 5
+// 输出：
+// 8
+
+// 测试数据2
+// 输入：
+// 5 10
+// 2 6
+// 2 3
+// 6 5
+// 5 4
+// 4 6
+// 输出：
+// 15
+
+// 测试数据3
+// 输入：
+// 3 5
+// 2 3
+// 2 4
+// 1 2
+// 输出：
+// 7
+
+// 测试数据4
+// 输入：
+// 2 3
+// 1 2
+// 2 1
+// 输出：
+// 2
+
+// 测试数据5
+// 输入：
+// 1 10
+// 5 10
+// 输出：
+// 0
+</div></code></pre>
+	<h2 id="%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95">贪心算法</h2>
+	<br />
+	<blockquote>
+		<p>活动安排问题: 有n个活动，每个活动有一个开始时间和结束时间，求最多能参加多少个活动，假设一个人同时只能参加一个活动</p>
+	</blockquote>
+	<p>解题思路：
+		按照结束时间从小到大排序，每次选择结束时间最早且和前面的活动不冲突的活动</p>
+	<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">1e5</span> + <span class="hljs-number">10</span>;
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Activity</span> {</span>
+    <span class="hljs-keyword">int</span> start, <span class="hljs-built_in">end</span>;
+    <span class="hljs-comment">//比较函数 重载&lt;号，方便后面排序</span>
+    <span class="hljs-keyword">bool</span> <span class="hljs-keyword">operator</span>&lt; (<span class="hljs-keyword">const</span> Activity&amp; t) <span class="hljs-keyword">const</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">end</span> &lt; t.<span class="hljs-built_in">end</span>;
+    }
+} act[N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> n;
+    <span class="hljs-built_in">cin</span> &gt;&gt; n; <span class="hljs-comment">// 输入活动数量</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+        <span class="hljs-built_in">cin</span> &gt;&gt; act[i].start &gt;&gt; act[i].<span class="hljs-built_in">end</span>; <span class="hljs-comment">// 输入每个活动的开始时间和结束时间</span>
+    }
+    sort(act, act + n); <span class="hljs-comment">// 按照结束时间从小到大排序</span>
+    <span class="hljs-keyword">int</span> cnt = <span class="hljs-number">1</span>, <span class="hljs-built_in">end</span> = act[<span class="hljs-number">0</span>].<span class="hljs-built_in">end</span>; <span class="hljs-comment">// 初始化计数器和结束时间</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; n; i++) {
+        <span class="hljs-keyword">if</span> (act[i].start &gt;= <span class="hljs-built_in">end</span>) { <span class="hljs-comment">// 如果当前活动的开始时间晚于等于上一个活动的结束时间</span>
+            cnt++; <span class="hljs-comment">// 计数器加1</span>
+            <span class="hljs-built_in">end</span> = act[i].<span class="hljs-built_in">end</span>; <span class="hljs-comment">// 更新结束时间</span>
+        }
+    }
+    <span class="hljs-built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// 输出最多能参加的活动数量</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+</div></code></pre>
+	<pre class="hljs"><code><div>// 测试数据1
+// 输入：
+// 3
+// 1 3
+// 2 5
+// 4 7
+// 输出：
+// 2
+
+// 测试数据2
+// 输入：
+// 4
+// 1 3
+// 2 5
+// 4 7
+// 6 9
+// 输出：
+// 2
+
+// 测试数据3
+// 输入：
+// 5
+// 1 3
+// 2 5
+// 4 7
+// 6 9
+// 8 10
+// 输出：
+// 3
+
+// 测试数据4
+// 输入：
+// 2
+// 1 3
+// 3 5
+// 输出：
+// 1
+
+// 测试数据5
+// 输入：
+// 1
+// 1 3
+// 输出：
+// 1
+
+</div></code></pre>
+	<h2 id="dijkstra">Dijkstra</h2>
+	<blockquote>
+		<p>题目描述：给定一个有向图，求起点到终点的最短距离<br />
+			输入格式：第一行包含四个整数n,m,s,t，表示图的大小和起点终点编号。<br />
+			接下来m行每行包含三个整数a,b,c，表示存在一条从a到b的有向边，边长为c。<br />
+			输出格式：输出一个整数，表示起点到终点的最短距离，如果从起点无法到达终点，则输出-1。<br /></p>
+	</blockquote>
+	<pre class="hljs"><code><div><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;cstring&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;algorithm&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">510</span>, INF = <span class="hljs-number">0x3f3f3f3f</span>;
+<span class="hljs-keyword">int</span> n, m, s, t;
+<span class="hljs-keyword">int</span> g[N][N], dist[N];
+<span class="hljs-keyword">bool</span> st[N];
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">dijkstra</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">memset</span>(dist, <span class="hljs-number">0x3f</span>, <span class="hljs-keyword">sizeof</span> dist); <span class="hljs-comment">// 初始化距离数组</span>
+    dist[s] = <span class="hljs-number">0</span>; <span class="hljs-comment">// 起点到起点的距离为0</span>
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i ++ )
+    {
+        <span class="hljs-keyword">int</span> t = <span class="hljs-number">-1</span>; <span class="hljs-comment">// t用来记录当前未确定最短路的点中距离最小的点</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= n; j ++ )
+            <span class="hljs-keyword">if</span> (!st[j] &amp;&amp; (t == <span class="hljs-number">-1</span> || dist[t] &gt; dist[j])) <span class="hljs-comment">// 如果j未确定最短路且j的距离比t小</span>
+                t = j; <span class="hljs-comment">// 更新t为j</span>
+
+        st[t] = <span class="hljs-literal">true</span>; <span class="hljs-comment">// 标记t为已确定最短路</span>
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= n; j ++ )
+            dist[j] = <span class="hljs-built_in">min</span>(dist[j], dist[t] + g[t][j]); <span class="hljs-comment">// 用t更新其他点的距离</span>
+    }
+
+    <span class="hljs-keyword">if</span> (dist[t] == INF) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>; <span class="hljs-comment">// 如果终点不可达，返回-1</span>
+    <span class="hljs-keyword">return</span> dist[t]; <span class="hljs-comment">// 返回起点到终点的最短距离</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m &gt;&gt; s &gt;&gt; t;
+
+    <span class="hljs-built_in">memset</span>(g, <span class="hljs-number">0x3f</span>, <span class="hljs-keyword">sizeof</span> g); <span class="hljs-comment">// 初始化邻接矩阵</span>
+    <span class="hljs-keyword">while</span> (m -- )
+    {
+        <span class="hljs-keyword">int</span> a, b, c;
+        <span class="hljs-built_in">cin</span> &gt;&gt; a &gt;&gt; b &gt;&gt; c;
+        g[a][b] = <span class="hljs-built_in">min</span>(g[a][b], c); <span class="hljs-comment">// 有重边，取最小值</span>
+    }
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; dijkstra() &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// 输出结果</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">// 测试数据1</span>
+<span class="hljs-comment">// 输入：</span>
+<span class="hljs-comment">// 3 3 1 3</span>
+<span class="hljs-comment">// 1 2 2</span>
+<span class="hljs-comment">// 2 3 1</span>
+<span class="hljs-comment">// 1 3 4</span>
+<span class="hljs-comment">// 输出：</span>
+<span class="hljs-comment">// 3</span>
+
+<span class="hljs-comment">// 测试数据2</span>
+<span class="hljs-comment">// 输入：</span>
+<span class="hljs-comment">// 3 3 1 3</span>
+<span class="hljs-comment">// 1 2 2</span>
+<span class="hljs-comment">// 2 3 1</span>
+<span class="hljs-comment">// 1 3 1</span>
+<span class="hljs-comment">// 输出：</span>
+<span class="hljs-comment">// 1</span>
+
+<span class="hljs-comment">// 测试数据3</span>
+<span class="hljs-comment">// 输入：</span>
+<span class="hljs-comment">// 3 3 1 3</span>
+<span class="hljs-comment">// 1 2 2</span>
+<span class="hljs-comment">// 2 3 1</span>
+<span class="hljs-comment">// 1 3 2</span>
+<span class="hljs-comment">// 输出：</span>
+<span class="hljs-comment">// 2</span>
+
+<span class="hljs-comment">// 测试数据4</span>
+<span class="hljs-comment">// 输入：</span>
+<span class="hljs-comment">// 3 3 1 3</span>
+<span class="hljs-comment">// 1 2 2</span>
+<span class="hljs-comment">// 2 3 1</span>
+<span class="hljs-comment">// 1 3 3</span>
+<span class="hljs-comment">// 输出：</span>
+<span class="hljs-comment">// 3</span>
+
+<span class="hljs-comment">// 测试数据5</span>
+<span class="hljs-comment">// 输入：</span>
+<span class="hljs-comment">// 3 3 1 3</span>
+<span class="hljs-comment">// 1 2 2</span>
+<span class="hljs-comment">// 2 3 1</span>
+<span class="hljs-comment">// 1 3 5</span>
+<span class="hljs-comment">// 输出：</span>
+<span class="hljs-comment">// -1</span>
+
+
+</div></code></pre>
+
+</body>
+
+</html>

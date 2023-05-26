@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <span></span>
+<script>
+// const reg = new RegExp(); //  / /
+// const arr = new Array(); // []
+// const obj = new Object();//  {}
+
+// 正则表达式的作用：匹配字符串
+// ^表示开始
+// \d表示数字
+// 大括号：表示位数
+// $表示结束
+// []代表的是规定返回
+// ()代表分组，可以用exec方法获取分组内容
+
+const input = document.querySelector("input");
+const span = document.querySelector("span");
+input.onblur = function (){
+    if(check(this.value)){
+        span.innerHTML = "验证通过"
+    }else{
+        span.innerHTML = "验证失败"
+    }
+}
+// 难于上手，易于精通
+function check(str){
+    const reg = /^(\d{3})(\d{2})$/;
+    let result = reg.test(str)  //匹配字符串,判断是否能成功匹配
+    let arr = reg.exec(str);
+    console.log(arr);
+    return result;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="wee11";
+        //[]表示范围 可以匹配好多位
+        var rag=/[a-z]/;//正则表达式
+        var result=rag.test(str);//返回值是布尔值
+        console.log(result);
+        //只能匹配1位
+        var r=/^[a-z]$/;
+        var re=r.exec(str);//返回值是匹配内容
+        console.log(re);
+        //匹配2位
+        var r1=/^[a-z]{2}$/;
+        //配2~5位
+        var r2=/^[a-z0-9A-Z_]{2,5}$/;
+        //  \w代表数字，字母，下划线
+        var r3=/^\w$/;
+        //  +代表一位到多位
+        var r4=/^[a-z]+$/;
+        //  ? 0位或1位
+        //  \s表示空格或者换行
+        //  . 表示匹配所有
+        //  \ 转义  \+去除其代码意义,单纯匹配+
+        
+
+    </script>
+</body>
+</html>

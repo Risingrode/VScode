@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*flex布局   容器    默认：项目高度适应容器高度*/
+        /*row(默认值) 主轴水平方向 起点在左端
+        row-reverse 主轴水平方向 起点在右端
+        column 主轴垂直方向 起点在上沿
+        column-reverse 主轴垂直方向 起点在上沿*/
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            /*纵向排列*/
+            /*默认情况下，元素横向显示*/
+            background-color: yellow;
+            width: 800px;
+            height: 300px;
+            /*justify-content
+            flex-start （默认值）左对齐
+            flex-end：右对齐
+            center：居中
+            space-between：两端对齐，项目之间的间隔相等
+            space-around：每个项目两侧间隔相等。
+            所以，项目之间的间隔比项目与边框的间隔大一倍*/
+            justify-content: space-around;
+            /*align-item
+            flex-start:交叉轴起点对齐
+            flex-end:交叉轴终点对齐
+            center:交叉轴中点对齐
+            stretch:如果项目未设置高度，则占满整个容器*/
+            align-items: center;
+        }
+        
+        .item {
+            width: 100px;
+            border: 1px solid blue;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">123</div>
+        <div class="item">454</div>
+        <div class="item">666</div>
+    </div>
+</body>
+
+</html>

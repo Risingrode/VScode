@@ -1,0 +1,314 @@
+{
+  "keys": "D:\\VS_code代码\\Egg\\text02\\config\\config.default.js",
+  "middleware": "D:\\VS_code代码\\Egg\\text02\\config\\config.default.js",
+  "view": {
+    "defaultViewEngine": "D:\\VS_code代码\\Egg\\text02\\config\\config.default.js",
+    "root": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view@2.1.3@egg-view\\config\\config.default.js",
+    "cache": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view@2.1.3@egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view@2.1.3@egg-view\\config\\config.default.js",
+    "mapping": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view@2.1.3@egg-view\\config\\config.default.js"
+  },
+  "cors": {
+    "origin": "D:\\VS_code代码\\Egg\\text02\\config\\config.default.js",
+    "allowMethods": "D:\\VS_code代码\\Egg\\text02\\config\\config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\config\\config.default.js",
+      "type": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "useSession": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "cookieName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "sessionName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "headerName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "bodyName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "queryName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "supportedRequests": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "domainWhiteList": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+    "xframe": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "value": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.local.js",
+      "maxAge": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "value": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "value": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "policy": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "ipExceptionList": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-session@3.3.0@egg-session\\config\\config.default.js",
+    "key": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-session@3.3.0@egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-session@3.3.0@egg-session\\config\\config.default.js",
+    "encrypt": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-session@3.3.0@egg-session\\config\\config.default.js",
+    "logValue": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-session@3.3.0@egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-security@2.10.0@egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-i18n@2.1.1@egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js",
+      "development": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js",
+      "file": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-schedule@3.6.6@egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "fields": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "files": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "allowArrayField": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js",
+      "disable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-multipart@2.13.1@egg-multipart\\config\\config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "fastReady": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js",
+    "overrideIgnore": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-development@2.7.0@egg-development\\config\\config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dir": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "dynamic": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "preload": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "buffer": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-static@2.2.0@egg-static\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view-nunjucks@2.3.0@egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view-nunjucks@2.3.0@egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view-nunjucks@2.3.0@egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view-nunjucks@2.3.0@egg-view-nunjucks\\config\\config.default.js",
+    "cache": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg-view-nunjucks@2.3.0@egg-view-nunjucks\\config\\config.local.js"
+  },
+  "env": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "name": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "cookies": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "proxy": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "ipHeaders": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "hostHeaders": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "pkg": {
+    "name": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "version": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "description": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "private": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "egg": {
+      "declarations": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "egg": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "egg-cors": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "egg-scripts": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "egg-view-nunjucks": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "autod-egg": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "egg-bin": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "egg-ci": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "egg-mock": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "eslint": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "scripts": {
+      "start": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "stop": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "dev": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "debug": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "test": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "test-local": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "cov": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "lint": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "ci": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "autod": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "url": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "author": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "license": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "baseDir": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "HOME": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "rundir": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "notFound": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "sitefile": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "middlewares": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "httpClient": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "cacheControl": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "encoding": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "formLimit": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "jsonLimit": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "textLimit": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "strict": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "depth": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "parameterLimit": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "onerror": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "encoding": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "env": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "level": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "consoleLevel": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "outputJSON": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "buffer": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "appLogName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "coreLogName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "agentLogName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "errorLogName": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "enablePerformanceTimer": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "request": {
+      "timeout": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "maxSockets": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "maxSockets": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "logging": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "serverTimeout": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "port": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+      "hostname": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js",
+    "responseTimeout": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+  },
+  "onClientError": "D:\\VS_code代码\\Egg\\text02\\node_modules\\_egg@2.35.0@egg\\config\\config.default.js"
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #app {
+            padding: 0 auto;
+            margin-top: 100px;
+            margin-left: 50px;
+            width: 500px;
+            border: 1px solid red;
+            box-sizing: border-box;
+            padding-bottom: 100px;
+        }
+        
+        img {
+            height: 100px;
+            width: 200px;
+            margin-left: 200px;
+        }
+        
+        .box {
+            border: 1px solid red;
+            width: 220px;
+            box-sizing: border-box;
+            margin: auto auto;
+        }
+        
+        .box .small {
+            background-color: blue;
+            font-family: KaiTi;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 表达式的意思 -->
+        <!-- 绑定文本 -->
+        <h1>{{massage+" 你好"}}</h1>
+        <!-- v-bind： 绑定属性   可以简写成 ： -->
+        <img :src="url">
+        <!-- 绑定事件的方法 -->
+        <div class="box">
+            <button v-on:click="sayHai" class="small">小小按钮</button>
+            <!-- 简写版 -->
+            <button @click="sayHai" class="beauty">颜值测试按钮</button>
+            <button @click="changImg" class="potato">改变图片</button>
+        </div>
+
+    </div>
+    <!-- 引用文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        //创建vue实例
+        //dom思路，先获取dom，再操作节点，domcument.querySelector()
+        new Vue({
+            el: "#app",
+            data: {
+                massage: "hellow world",
+                url: "img/1.jpg"
+            },
+            methods: {
+                sayHai() {
+                    alert("付昌威帅不帅？")
+                },
+                changImg() {
+                    if (this.url == "img/2.jpg")
+                        this.url = "img/1.jpg";
+                    else
+                        this.url = "img/2.jpg";
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

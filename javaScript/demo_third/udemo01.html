@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button>box</button>
+    <div class="box"></div>
+    <script>
+        //click 点击事件 +on
+        //onmouseenter:鼠标移入
+        //onmouseleave:鼠标移出
+        //当...时，做什么事
+        let btn = document.querySelector("button");
+        let box = document.querySelector(".box");
+        btn.onclick = function() {
+            console.log("按钮事件触发成功！");
+        }
+        box.onmouseenter = function() {
+            this.style.backgroundColor = "blue";
+        }
+        box.onmouseleave = function() {
+            this.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>

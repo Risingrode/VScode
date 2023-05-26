@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .activ {
+            background-color: red;
+        }
+    </style>
+</head>
+
+//className改变背景颜色
+
+<body>
+    <h1>hellow,world</h1>
+    <h1>hellow,world</h1>
+    <h1>hellow,world</h1>
+    <h1>hellow,world</h1>
+    <script>
+        // let h1 = document.querySelector("h1");
+        // h1.onclick = function() {
+        //     this.className = "active";
+        // }
+        let h1List = document.querySelectorAll("h1");
+        for (let i in h1List) {
+            h1List[i].onclick = function() {
+                //this.className = "active";
+                if (this.className === "activ") {
+                    this.className = "";
+                } else {
+                    this.className = "activ";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

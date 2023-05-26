@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 什么是同步？什么是异步
+// 同步代码，一行一行执行
+// 异步的代码，分成两部分，先执行，然后挂起
+// 等待结果，拿到结果后再运行回调函数
+// console.log("hello world1");
+
+// setTimeout(() => {
+//     console.log("hello world2")
+// },0)
+
+// console.log("hello world3")
+// 函数的返回值，不能在异步程序中获取
+// 通过回调函数，可以获取异步数据。
+// （把函数当做参数传给另一个函数）
+function getData(fn){
+    setTimeout(() => {
+        fn("hello world")
+    },1000)
+}
+
+// let result = getData();
+// console.log(result);
+getData(function(data){
+    console.log(data);
+})
+
+</script>
+</body>
+</html>

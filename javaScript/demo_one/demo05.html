@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var list=[1,4,3,88,7];
+        // list.push(990);
+        // list.sort();
+        // console.log(list);
+
+        var s = ["o", "e", "u", "p"];
+        var s1 = s.join("-");
+        console.log(s1);
+
+        var s3 = "2022-02-02";
+        var s2 = s3.split("-");
+        console.log(s2);
+
+        var list = [{
+            name: "小明",
+            age: 16,
+            sex: "男"
+        }, {
+            name: "小花",
+            age: 16,
+            sex: "女"
+        }, {
+            name: "小黑",
+            age: 16,
+            sex: "男"
+        }]
+
+        console.log(list);
+        var list1 = list.filter(function(item) {
+            return item.sex === "男";
+        })
+        console.log(list1);
+
+        var newlist = [];
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].sex === "男")
+                newlist.push(list[i]);
+        }
+        console.log(newlist);
+    </script>
+</body>
+
+</html>

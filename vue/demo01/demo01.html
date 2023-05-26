@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 入门测试</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="minus">-</button>
+        <span>{{number}}</span>
+        <button @click="add">+</button>
+        <h3>商品价格(单价为3.14)是：<span>{{sum}}</span></h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        //事件冒泡，事件捕获，默认事件行为
+        new Vue({
+            el: "#app",
+            data: {
+                number: 0,
+                sum: 0
+            },
+            methods: {
+                add() {
+                    this.number++;
+                    sum = 3.14 * number
+                },
+                minus() {
+                    if (this.number > 0) {
+                        this.number--;
+                        sum = 3.14 * number
+                    } else {
+                        alert("不能减到负值哈！");
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

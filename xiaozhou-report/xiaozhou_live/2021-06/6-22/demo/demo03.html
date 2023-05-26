@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 箭头函数
+
+// function fun() {
+//     return 100;
+// }
+// const fun = function(){
+//     return 100;
+// }
+
+// const fun = () => 100
+
+/*
+    箭头函数
+    ()中定义参数，如果只有一个参数，可以不写
+    括号；
+    {}中写函数体，如果函数体中只有返回值，可以
+    不写return。
+*/ 
+// console.log(fun()) ;  vscode
+
+let obj = {
+    name:"小明",
+    age:2,
+    sayName(){
+        // let self = this;
+        // console.log(`我是${this.name}`)
+        // console.log("我是" + this.name)
+        setTimeout(() => {
+            console.log("我是" + this.name)
+        },500)
+    }
+}
+obj.sayName();
+
+/*
+箭头函数和普通函数的区别：
+1. this指向不同
+2. 普通函数，谁调用这个函数，this指向谁
+3. 箭头函数，在哪里定义函数，this指向谁
+*/ 
+
+</script>
+</body>
+</html>

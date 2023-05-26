@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*盒子模型*/
+        
+        * {
+            /*元素边距初始化*/
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            /*border-width: 10px;//线段宽度
+            border-style: solid;实线
+            border-color: red;  线颜色为红*/
+            border: 1px solid red;
+            margin-left: 100px;
+            /*左边距100像素*/
+            margin: 100px 0 0 200px;
+            /*简化，对应上右下左*/
+            margin: 100px 50px;
+            /*上下值是100 左右值是50*/
+            padding-top: 30px;
+            /*内容距离上部30px   并且盒子变大*/
+            padding-left: 50px;
+            box-sizing: border-box;
+            /*元素实际宽度，长度跟普通的相同*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="text"></a>
+    </div>
+
+</body>
+
+</html>

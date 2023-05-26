@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // console.log("给2打电话");
+        // console.log("给3打电话");
+        // console.log("给4打电话");
+        // //异步
+        // //不会因为其它程序出错而卡bug
+        // setTimeout(() => {
+        //     console.log("给1打电话");
+        // }, 500)
+        // setTimeout(() => {
+        //     console.log("给2打电话");
+        // }, 500)
+        // setTimeout(() => {
+        //     console.log("给3打电话");
+        // }, 500)
+        // setTimeout(() => {
+        //     console.log("给4打电话");
+        // }, 500)
+
+        //异步获取数据
+        let target = "hellow,world";
+
+        //获取数据方法
+        function getData(fn) {
+            setTimeout(() => {
+                fn(target);
+            }, 500)
+        }
+        getData((d) => {
+            console.log("hellow,world");
+        })
+
+        //回调函数 ：把函数作为一个参数传递给另一个函数
+
+        /*function fun(fu){
+            fn();
+        }
+        fun(()=>{
+            console.log("我是回调函数");
+        })*/
+    </script>
+</body>
+
+</html>

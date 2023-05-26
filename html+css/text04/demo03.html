@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css3新特性-->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 20px;
+            /*border-radius: 50%;   直接设置成圆*/
+            /*border-radius: 20px 40px; 用的较少*/
+            /*相当于小圆的半径 如果设置2个值 第一个值表示左上和右下 第二个值表示右上和左下*/
+            /*阴影*/
+            box-shadow: 10px 20px 30px blue;
+            /*横坐标 纵坐标   模糊程度 */
+            /*形变*/
+            transform: rotate(45deg);
+            /*旋转*/
+            /*形变*/
+            transform: scale(0.5);
+            /*按倍数缩放*/
+            /*移位*/
+            transform: translate(50px, 100px);
+            /*横坐标移动50px 纵坐标移动100px*/
+            /*注意：多个transform 功能会相互覆盖   所以要融合在一起写*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

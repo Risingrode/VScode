@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            margin: 100px auto;
+            /* transition-property: transform;/*过渡属性
+            transition-duration: 1s;过渡持续时间 */
+            /*过渡函数
+            ease 开始结束慢   中间快  默认值
+            linear  匀速
+            ease-in   开始慢
+            ease-out  结束慢
+            ease-in-out  和ease类似 比ease幅度大*/
+            transition: transform 500ms linear 200ms;
+            /*属性   秒数   函数    延时秒数  */
+        }
+        
+        .box:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>盒子</h1>
+    </div>
+</body>
+
+</html>

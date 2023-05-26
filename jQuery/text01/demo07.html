@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 300px auto;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        // $(".box").mouseenter(function() {
+        //     console.log("hellow,world");
+        // })
+        // $(".box").mouseleave(function() {
+        //     console.log("hellow,world");
+        // })
+        // $(".box").mouseemove(function() {
+        //     console.log("moving");
+        // })
+
+        //链式操作
+        $(".box").mouseenter(function() {
+            console.log("hellow,world");
+        }).mouseleave(function() {
+            console.log("hellow,world");
+        }).mousemove(function(e) {
+            console.log("x坐标是:" + e.pageX + "y坐标是:" + e.pageY);
+        })
+    </script>
+</body>
+
+</html>

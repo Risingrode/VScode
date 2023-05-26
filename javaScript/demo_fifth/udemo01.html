@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        /*定位*/
+        top: 100px;
+        /*上部偏移100*/
+        left: 100px;
+        /*左侧留间距100px*/
+    }
+</style>
+
+<body>
+    <div class="box"></div>
+    <script>
+        // 移动端触屏事件
+        let box = document.querySelector(".box");
+        box.ontouchstart = function() {
+            console.log("start");
+        }
+        setInterval = function() {
+        console.log("延时");
+        }, 1000);
+        box.ontouchend = function() {
+                console.log("end");
+            }
+            // box.ontouchmove = function() {
+            //         console.log("hellow,world");
+            //     }
+            // document.onkeydown = function(e) {
+            //     switch (code) {
+            //         case 37:
+            //             box.style.left = box.offsetLeft - 5 + "px";
+            //             break;
+            //         case 38:
+            //             box.style.top = box.offsetTop - 5 + "px";
+            //             break;
+            //         case 39:
+            //             box.style.left = box.offsetLeft + 5 + "px";
+            //             break;
+            //         case 40:
+            //             box.style.top = box.offsetTop + 5 + "px";
+            //             break;
+            //     }
+            // }
+    </script>
+</body>
+
+</html>

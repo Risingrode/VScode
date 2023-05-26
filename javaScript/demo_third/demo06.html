@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    /*文本输入函数*/
+    <input type="text">
+    <button>按钮</button>
+    <ul class="fruit-list">
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>鸭梨</li>
+    </ul>
+    <script>
+        //创建元素节点：creatElement
+        //创建文本节点：creatTextNode
+        //添加节点：appendChild
+        //删除节点：removeChild
+        //制作水果列表的添加与删除
+        let btn = document.querySelector(`button`);
+        let ul = document.querySelector(`ul`);
+        let inp = document.querySelector(`input`);
+        let list = document.querySelectorAll(`.fruit-list li`);
+        btn.onclick = function() {
+            //获取文本框内容
+            let value = inp.value;
+            let li = document.createElement("li");
+            //创建文本节点
+            let txt = document.createTextNode(value);
+            ul.appendChild(li);
+            li.appendChild(txt);
+        }
+        for (let i in list) {
+            list[i].onclick = function() {
+                ul.removeChild(list[i]);
+            }
+        }
+    </script>
+</body>
+
+</html>

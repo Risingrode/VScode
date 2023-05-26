@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// this
+/* 
+    1.直接输出this指向全局对象
+*/
+// console.log(this);
+
+// 全局函数其实是window（全局对象）的方法
+// function fun(){
+//     console.log(this);
+// }
+// window.fun();
+
+// this放在方法中，this指向调用这个方法的对象
+// let cat = {
+//     name:"喵喵",
+//     sayName(){
+//         console.log("我是" + this.name)
+//     }
+// }
+
+// cat.sayName();
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老付开发网</title>
+    <style>
+        * {
+            /* 除边 */
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .sum {
+            margin: 100px auto;
+        }
+        
+        .container {
+            border: 1px solid blue;
+            width: 300px;
+            margin: 100px auto;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .container ul>li {
+            color: blue;
+        }
+        
+        .container ul {
+            list-style: inside;
+        }
+        
+        .ima {
+            margin-left: 100px;
+            padding-right: 200px;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+        
+        a {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="text02/demo01.css">
+</head>
+
+<body>
+    <a href="http://baidu.com">百度</a>
+    <div class="sum">
+        <label for="username">用户名测试</label>
+        <input type="text">
+        <div class="a">外部div测试句</div>
+        <div class="container">
+            <ul class="fruit">
+                <li>苹果</li>
+                <li class="banana">
+                    <h3>内部列表</h3>
+                    香蕉
+                </li>
+                <li class="a b c">橘子</li>
+            </ul>
+        </div>
+        <img src="text02/1.jpg" class="ima imb" alt="">
+    </div>
+
+</body>
+
+</html>

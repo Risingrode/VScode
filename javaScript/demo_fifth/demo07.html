@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿威笔记</title>
+    <style>
+        button {
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+            display: none;
+        }
+        
+        body {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>滚轮事件</h1>
+    <button>↑</button>
+    <script>
+        //防抖
+        //禁止短时间多次触发的事件
+        /*let timer = null;
+        //滚轮事件
+        window.onscroll = function() {
+            if (timer !== null) {
+                clearTimeout(timer);
+            }
+            timer = setTimeout(() => {
+                console.log("hellow,world");
+                timer = null;
+            }, 1000)
+        }*/
+
+        //节流
+        /*let mark=true;
+        window.onscroll=function(){
+            if(mark){
+                setTimeout(()=>{
+                    console.log("hellow,world");
+                    mark=true;
+                },500)
+            }
+            mark=false;
+        }*/
+
+        //返回顶部效果
+        let btn = document.querySelector("button");
+        btn.onclick = function() {
+            window.scrollTo(0, 0)
+        }
+        let timer = null;
+        // window.onscroll = function() {
+        //     if (timer !== null) {
+        //         clearTimeout(timer);
+        //     }
+        //     timer = setTimeout(() => {
+        //         console.log("计数器");
+        //判断是否在顶部
+        //         if (document.documentElement.scrollTop > 0) {
+        //             btn.style.display = "block";
+        //         } else {
+        //             btn.style.display = "none";
+        //         };
+        //         timer = null;
+        //     }, 500)
+        // }
+
+        //利用闭包，把防抖算法与业务代码分开
+        // function debounce(fn){//fn为函数
+        //     let timer=null;
+        //     function eventFun(){
+        //         if(timer!=null){
+        //             clearTimeout(timer);
+        //         }
+        //         timer=setTimeout(()=>{
+        //             //业务代码
+        //             fn();
+        //             timer=null;
+        //         },500)
+        //     }
+        //     return eventFun;
+        // }
+
+        window.onscroll = debounce(() => {
+
+            console.log("计数器");
+
+            if (document.documentElement.scrollTop > 0) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            };
+        });
+    </script>
+</body>
+
+</html>

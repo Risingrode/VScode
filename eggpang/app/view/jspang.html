@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    {% include "./view/cookie.html" ignore missing %}
+    <h1>`现在时间是：{{nowTime}}`</h1>
+    <div>
+        <button onclick="add()">增加Cookie</button>
+        <button onclick="del()">删除Cookie</button>
+        <button onclick="editor()">修改Cookie</button>
+        <button onclick="show()">查看Cookie</button>
+    </div>
+</body>
+<script>
+    function add() {
+        fetch("/add", {
+            method: "post",
+            headers: {
+                "Content-type": "application/json"
+            }
+        });
+    }
+
+    function del() {
+        fetch("/del", {
+            method: "post",
+            headers: {
+                "Content-type": "application/json"
+            }
+        });
+    }
+
+    function editor() {
+        fetch("/editor", {
+            method: "post",
+            headers: {
+                "Content-type": "application/json"
+            }
+        });
+    }
+
+    function show() {
+        fetch("/show", {
+            method: "post",
+            headers: {
+                "Content-type": "application/json"
+            }
+        });
+    }
+</script>
+
+</html>

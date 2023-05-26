@@ -1,0 +1,48 @@
+<mxfile host="65bd71144e">
+    <diagram id="F8ls3r21k5mRH-CcAM5p" name="第 1 页">
+        <mxGraphModel dx="938" dy="397" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="104" y="108" width="519" height="335" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=none;shape=flexArrow;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="374" y="345" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="图像处理" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="154" y="315" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="数据传输模块" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="422" y="315" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="ocr技术" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="304" y="301" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="拍摄装置" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="277" y="134" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;shape=flexArrow;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="298" y="204" as="sourcePoint"/>
+                        <mxPoint x="215" y="311" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="传递照片" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="192" y="211" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="把数据" style="shape=singleArrow;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="546" y="315" width="154" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;图像识别系统&lt;/b&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="130" width="184" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="后端数据接收模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="704" y="321" width="102" height="48" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

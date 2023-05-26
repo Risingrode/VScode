@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 拷贝一个对象：让两个变量指向两个对象
+
+let obj = {
+    name:"小明",
+    age:2
+}
+
+function copy(obj){
+    let newObj = {};
+    for(let i in obj){
+        newObj[i] = obj[i];
+    }
+    return newObj;
+}
+
+const newObject = copy(obj);
+
+obj.name = "小红";
+console.log(obj);
+console.log(newObject);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clear::before,
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list .pic img {
+    width: 100px;
+    height: 200px;
+}
+
+.pic {
+    width: 200px;
+    float: left;
+}
+
+.title {
+    width: 200px;
+    float: left;
+}
+
+.title a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    color: red;
+    text-decoration: none;
+    /*去除a标签下面的横线*/
+    line-height: 30px;
+    /*垂直居中*/
+    text-align: center;
+    /*水平居中*/
+}

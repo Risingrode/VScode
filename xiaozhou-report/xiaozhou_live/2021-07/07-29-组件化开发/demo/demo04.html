@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <my-hello></my-hello> 
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = Vue.createApp({});
+        // 注册组件：组件需要先注册，后使用。
+        app.component("my-hello",{
+            template:`
+                <h1>hello</h1>
+                <my-counter></my-counter>
+            `
+        })
+        app.component("my-counter",{
+            template:`
+                <h2>计数器</h2>
+            `
+        })
+        app.mount("#app");
+        // 一个应用如果有1000个组件，用了800个组件
+
+        // 使用component方法注册的组件叫全局组件
+        // 可以使用components属性实现局部组件
+    </script>
+</body>
+</html>

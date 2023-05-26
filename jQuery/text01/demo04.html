@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 200px 200px;
+        }
+        
+        .active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-List">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
+    <img src="image/1.jpg" alt="">
+    <!-- <button>改变</button> -->
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        let imgSrc = [
+                "image/1.jpg",
+                "image/2.jpg",
+                "image/3.jpg"
+            ]
+            /*页面切换*/
+        $("button").click(function() {
+            /*改变和获取属性值*/
+            // $("img").attr("src", "image/3.jpg")
+            //获取索引
+            let index = $(this).index();
+            //设置属性
+            $("img").attr("src", imgSrc[index]);
+            //设置背景色
+            // $(this).addClass("active");
+            //去除背景色
+            // $(this).removeClass("active");
+            //切换背景色
+            // $(this).toggleClass("active");
+            //siblings 获取同级其它元素
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+
+        })
+    </script>
+</body>
+
+</html>

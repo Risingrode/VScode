@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// call,apply,bind
+// call是一个方法，是函数的方法
+
+let dog = {
+    name:"旺财",
+    sayName(){
+        console.log("我是"+this.name);
+    },
+    eat(food1,food2){
+        console.log("我喜欢吃"+food1+food2)
+    }
+}
+
+let cat = {
+    name:"喵喵"
+}
+// call可以调用函数,call可以改变函数中this
+// 指向
+dog.eat.call(cat,"鱼","肉");
+// dog.eat.apply(cat,["鱼","肉"]);
+dog.eat.bind(cat,"鱼","肉")();
+
+
+
+let student1 = {
+    name:"小明",
+    age:2,
+    friend:{
+        name:"小红"
+    }
+}
+let student2 = {
+    name:"小明",
+    age:2,
+    friend:{
+        name:"小红"
+    }
+}
+
+
+
+</script>
+</body>
+</html>

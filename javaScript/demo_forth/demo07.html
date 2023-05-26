@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <button>添加</button>
+    <ul class="fruit-list">
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>橘子</li>
+    </ul>
+    <script>
+        let btn = document.querySelector("button");
+        let ul = document.queryCommandValue(".fruit-list");
+        let inp = document.queryCommandValue("input");
+        btn.onclick = function() {
+                let value = inp.value;
+                let li = document.createElement("li");
+                let txt = document.createTextNode(value);
+                li.appendChild(txt);
+                ul.appendChild(li);
+            }
+            //事件委托
+        inp.onclick = function(e) {
+            console.log(e.target);
+            //target指向的是事件捕获值
+            //可以实现后添加的元素可以被删除
+            //把子元素的事件交给父系处理
+        }
+    </script>
+</body>
+
+</html>

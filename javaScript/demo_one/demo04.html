@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var list = ["a", "b", "c"];
+        var len = list.length;
+
+        console.log(len);
+        console.log(list);
+
+        list.push("f"); //在尾部追加元素
+        var vector = [1, 2, 39, 3, 4];
+
+        for (var i in vector) {
+            console.log(vector[i]);
+        };
+
+        // for(var i of vector){
+        //     consle.log(vector);
+        // }
+
+        list.map(function(value, index) {
+            console.log("第" + (index + 1) + "元素是：" + value) //索引
+        });
+
+        console.log("排序函数");
+        vector.sort();
+        console.log(vector);
+        console.log("筛选函数");
+        var newvector = vector.filter(function(item) {
+            if (item > 3) {
+                return item;
+            }
+        });
+        console.log(newvector);
+    </script>
+</body>
+
+</html>

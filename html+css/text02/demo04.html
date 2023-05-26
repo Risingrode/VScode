@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*伪元素选择器*/
+        /*利用class实现集体操作*/
+        
+        .line::before {
+            content: "123";
+            color: red;
+        }
+        /*也可以用组合选择器简化代码*/
+        
+        .line::after {
+            content: "123";
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="line">hellow,world</h1>
+    <h2 class="line">hellow,world</h2>
+    <p class="line">这是一个段落</p>
+</body>
+
+</html>

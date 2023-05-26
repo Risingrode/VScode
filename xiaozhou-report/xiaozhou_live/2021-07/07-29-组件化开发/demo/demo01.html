@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <hello></hello>
+        <hello></hello>
+        <hello></hello>
+        <hello></hello>
+        <hello></hello>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return {
+                    msg:"hello world"
+                }
+            }
+        })
+
+        app.component("hello",{
+            data(){
+                return {
+                    msg:"hello component"
+                }
+            },
+            methods:{
+                showData(){
+                    alert("hello world")
+                }
+            },
+            template:`
+                <h1>数据：{{msg}}
+                    <button @click="showData">按钮</button>    
+                </h1>
+            `
+        })
+        
+        app.mount("#app");
+    </script>
+</body>
+</html>

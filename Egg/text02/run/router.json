@@ -1,0 +1,76 @@
+[
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/",
+    "regexp": "/^(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/data",
+    "regexp": "/^\\/data(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "fruits",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/fruits",
+    "regexp": "/^\\/fruits(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "fruits",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/fruits",
+    "regexp": "/^\\/fruits(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "destroy_fruit",
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/fruits/:id",
+    "regexp": "/^\\/fruits\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  }
+]

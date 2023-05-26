@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 生成器generator 迭代器iterator
+
+// function* fun(){ //生成器
+//     console.log("函数中执行的代码块1")
+//     yield "hello1"
+//     console.log("函数中执行的代码块2")
+//     yield "hello2"
+//     return "hello3";
+// }
+
+// // gen就是迭代器
+// let gen = fun();
+// gen.next();
+// gen.next();
+
+const list = [1,2,3,4,5];
+let gen = list[Symbol.iterator]();
+
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next())
+
+for(let item of list){
+    console.log(item);
+}
+
+// 数组，对象，类数组，Set，Map
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<div class="box"></div>
+<script src="jquery.js"></script>
+<script>
+// let btn = document.querySelectorAll("button");
+// for(let i = 0;i<btn.length;i++){
+//     btn[i].onclick = function(){
+//         alert("hello world");
+//     }
+// }
+
+$("button").click(function(){
+    $(".box").hide(1000)
+})
+
+
+$.ajax({
+    type:"get",
+    url:"",
+})
+
+let xhr = XMLHttpRequest();
+xhr.open("get","http:....")
+xhr.send();
+xhr.onreadystatechange = function(){
+    if(xhr.readState == 4 && xhr.status == 200){
+        console.log(xhr.responseText)
+    }
+}
+
+
+
+</script>
+</body>
+</html>

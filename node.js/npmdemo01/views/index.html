@@ -1,0 +1,18 @@
+{% extends "./views/layout.html" %} {% block content %}
+
+<!-- <div>
+    <a href="/">首页</a>
+    <a href="/image">图片</a>
+</div> -->
+<h1>模板语法</h1>
+<p>{{title}}</p>
+<ul>
+    {%for studnt in studentList%}
+    <li>{{studnt}}</li>
+    {% endfor %}
+</ul>
+{% if isLogin %}
+<p>欢迎{{username}}</p>
+{% else %}
+<p>请登录...</p>
+{% include "./views/footer.html" %} {% endif %} {% endblock %}

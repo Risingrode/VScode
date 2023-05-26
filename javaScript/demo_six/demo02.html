@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //异步编程解决方案
+        //Promise获取异步数据
+        let target = "hellow,world";
+
+        function getDate() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(target);
+                }, 500)
+            })
+        }
+        /*let p=getDate();
+        p.then((d)=>{
+            console.log(d);
+        })*/
+
+        //async 函数
+        async function fun() {
+            let data = await getDate();
+            console.log(data);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// Symbol.iterator是一个内置的值
+const student = {
+    name:"小明",
+    age:12,
+    [Symbol("level")]:"优秀",
+    [Symbol("level")]:"有钱",
+}
+
+const list = [1,2,3,4,5,6];
+console.log(student[Symbol.iterator]);
+console.log(list[Symbol.iterator])
+// 如果对象有Symbol.iterator这个属性
+// 这个对象就可以被for...of遍历
+
+// for(let item in student){
+//     console.log(student[item])
+// }
+
+// 属性：可枚举，不可枚举
+
+
+
+
+
+
+</script>
+</body>
+</html>

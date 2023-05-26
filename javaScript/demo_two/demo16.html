@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //构造函数的函数名，首字母大写
+        //构造函数用于创建对象
+        function Dog(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        //prototype是构造函数的属性
+        //可以进行扩展方法
+        Dog.prototype.sayName = function() {
+            console.log(`我的名字是
+            ${this.name}岁`);
+        }
+
+        var dog = new Dog("旺财", 2);
+        dog.sayName();
+        var bigdog = new Dog("二哈", 3);
+        bigdog.sayName();
+
+        var arr = [3, 4, 5];
+        Array.prototype.saylen = function() {
+            console.log(`我是一个数组，我的长度是${this.length}`);
+        }
+        arr.saylen();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+    "name": "悬浮翻译-plus",
+    "description": "悬停翻译",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "icons": {
+        "16": "icons/icons16.png",
+        "48": "icons/icons48.png",
+        "128": "icons/icons128.png"
+    },
+    "browser_action": {
+        "default_title": "plugin title",
+        "default_icon": "icons/icons128.png",
+        "default_popup": "index.html"
+    }
+
+}

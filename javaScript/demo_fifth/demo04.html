@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="time">10:9</h1>
+    <button class="start">开始</button>
+    <button class="pause">暂停</button>
+    <button class="stop">结束</button>
+    <script>
+        let start = document.querySelector(".start");
+        let pause = document.querySelector(".pause");
+        let stop = document.querySelector(".stop");
+        let time = document.querySelector(".time");
+        let seconds = 0;
+        let ms = 0;
+        time.innerHTML = `${seconds}:${ms}`;
+        let timer = null;
+        start.onclick = function() {
+            clearInterval(timer); //防止循环重复，越点越快
+            timer = setInterval(() => {
+                if (ms === 9) {
+                    seconds++;
+                    ms = 0;
+                }
+                ms++;
+                time.innerHTML = `${seconds}:${ms}`;
+            }, 100)
+        }
+        pause.onclick = function() {
+            clearInterval(timer);
+        }
+        stop.onclick = function() {
+            seconds = 0;
+            ms = 0;
+            time.innerHTML = `${seconds}:${ms}`;
+        }
+    </script>
+</body>
+
+</html>

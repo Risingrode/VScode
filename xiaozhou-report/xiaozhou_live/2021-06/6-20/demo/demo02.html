@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 因为单线程，所以函数是一个个执行
+
+console.log("第1"); //同步还是异步
+
+//异步程序，会在同步程序执行完成之后再执行
+setTimeout(() => { 
+    console.log("第2");
+},100)
+
+for(let i = 0;i<2000;i++){ //同步还是异步
+    console.log("第3")
+}
+
+
+// 事件循环:伪代码
+// let eventLoop = [event1,event2]; //事件队列里面有函数（任务）
+
+while(true){
+    if(eventLoop.length > 0){
+        event();
+    }
+}
+
+
+
+
+
+</script>
+</body>
+</html>

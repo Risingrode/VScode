@@ -1,0 +1,8 @@
+#page {
+    background-color: rgb(42, 42, 142);
+    width: 50px;
+    height: 200px;
+    position: fixed;
+    left: 10px;
+    top: 150px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+<script>
+// 防抖:用户触发事件过于频繁，只要最后
+//一次事件的操作
+let inp = document.querySelector("input");
+
+inp.oninput = debounce(function(){
+    console.log(this.value);
+},500)
+
+function debounce(fn,delay){
+    let t = null;
+    return function(){ //input事件监听函数
+        if(t !== null){
+            clearTimeout(t);
+        }
+        t = setTimeout(() => {
+            fn.call(this);
+        },delay)
+    }
+}
+</script>
+</body>
+</html>

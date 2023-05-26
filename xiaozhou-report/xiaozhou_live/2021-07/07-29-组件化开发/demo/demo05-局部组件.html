@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <my-hello></my-hello>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const myCounter = {
+            template:`
+                <h2>计数器</h2>
+            `
+        }
+        const myHello = {
+            components:{
+                "my-counter":myCounter
+            },
+            template:`
+                <h1>hello</h1>
+                <my-counter></my-counter>
+            `
+        }
+        
+
+        const app = Vue.createApp({
+            // 注册两个局部组件
+            components:{
+                "my-hello":myHello,
+                "my-counter":myCounter
+            }
+        })
+
+        app.mount("#app")
+
+    </script>
+</body>
+</html>

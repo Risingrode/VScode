@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .picture-list img {
+            width: 320px;
+            height: 160px;
+        }
+        
+        .big-picture img {
+            width: 140px;
+            height: 320px;
+        }
+        
+        .big-picture {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture-list">
+        <img src="image/1.jpg" alt="">
+        <img src="image/2.png" alt="">
+        <img src="image/3.jpg" alt="">
+    </div>
+    <div class="big-picture"></div>
+    <script>
+        let imgList = document.querySelector('.picture-list img');
+        let bigPicture = document.querySelector('.big-picture');
+        let picList = document.querySelector('.picture-list');
+        for (let i in imgList) {
+            imgList[i].onmouseenter = function() {
+                //console.log(this.src);
+                bigPicture.innerHTML = `<img src=${this.src}>`
+            }
+            imgList[i].onmouseleave = function() {
+                bigPicture.innerHTML = '';
+            }
+        }
+        picList.onmousemove = function(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            console.log(`x的坐标是${x},y的坐标是${y}`)
+            bigPicture.style.top = y + 10 + "px";
+            bigPicture.style.left = x + 10 + "px";
+        }
+    </script>
+</body>
+
+</html>

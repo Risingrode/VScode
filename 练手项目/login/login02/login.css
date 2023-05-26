@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(bgc.jpg);
+    background-size: cover;
+}
+
+
+/* relative 
+生成相对定位的元素，相对于其正常位置进行定位。 
+因此，”left:20” 会向元素的 LEFT 位置添加 20 像素。  */
+
+.box {
+    position: absolute;
+    /*相对于父级定位*/
+    top: 50%;
+    /*以上边为基准*/
+    left: 50%;
+    /*以左边为基准*/
+    transform: translate(-50%, -50%);
+    /*居中*/
+    /* 旋转rotate  移动translate 缩放scale*/
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .8);
+    /*背景颜色*/
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    /*外部阴影*/
+    border-radius: 10px;
+    /*圆润*/
+}
+
+.box h2 {
+    margin: 0 0 30px;
+    /*上左下右*/
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input {
+    /*对输入框内部进行改造*/
+    width: 100%;
+    padding: 10px 0;
+    /*内部尺寸*/
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    /*定义无轮廓*/
+    background: transparent;
+    /*输入框内部透明*/
+}
+
+.box .inputBox label {
+    /*对输入框进行绝对定位*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    /*字母间的间距*/
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    /*元素永远不会成为鼠标事件的target。*/
+    transition: 0.5s;
+}
+
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label {
+    /*:focus属性可以直接实现点击事件效果*/
+    top: -18px;
+    /*上移18位*/
+    left: 0;
+    /*左间隔0位*/
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    /*字母外部扩张*/
+    cursor: pointer;
+    /*设定鼠标样式*/
+    border-radius: 20px;
+}

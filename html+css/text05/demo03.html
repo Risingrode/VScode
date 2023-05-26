@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*动画效果*/
+        
+        @keyframes anim {
+            0% {
+                /*初始状态*/
+                transform: rotate(0deg);
+            }
+            20% {
+                width: 200px;
+                height: 200px;
+                transform: rotate(360deg);
+            }
+            40% {
+                background-color: yellow;
+                width: 300px;
+                height: 300px;
+            }
+            100% {
+                /*最后状态*/
+                width: 100px;
+                height: 100px;
+            }
+            /*开始与结束相同  会更加平滑*/
+            /*from...to...  用于指定0%与100%*/
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: red;
+            animation: anim 5s linear 1s infinite;
+            /*动画名  每次跑2s 匀速 延时1s 执行2次*/
+            /*infinite*/
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<div id="app">
+    <h1 v-text="msg"></h1>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const app = Vue.createApp({
+        data(){
+            return {
+                msgList:["你好","情爱的用户","很高兴与你相遇"],
+                msg:""
+            }
+        },
+        mounted(){ //页面加载的时候，自动调用，而不是使用事件去调用
+            this.showMsg();
+        },
+        methods:{
+            showMsg(){
+                let i = 0;
+                let t = setInterval(() => {
+                    if(i === 2){
+                        clearInterval(t);
+                    }
+                    this.msg = this.msgList[i];
+                    i++;
+                },500)
+            }
+        }
+    });
+    app.mount("#app")
+</script>

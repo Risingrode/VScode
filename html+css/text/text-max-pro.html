@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 块元素  可设置高度和宽度  可独立成行  h div p ul li
+        行内   不可 不可  a  span
+        行内块  可  不可   img   button    input   */
+        /* 浮动：将其转化为行内块元素 
+        多个浮动方向一致的元素使用流式排列，
+        此时要注意浮动元素的高度*/
+        
+        * {
+            margin: 20;
+            padding: 20;
+        }
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            border: 3px solid blue;
+            margin: 0 auto;
+            float: left;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            margin: 0 auto;
+            float: left;
+        }
+        
+        .box3 {
+            width: 200px;
+            height: 200px;
+            border: 3px solid seagreen;
+            margin: 0 auto;
+            clear: both;
+        }
+        
+        .a1 {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        
+        a {
+            color: red;
+            font-size: larger;
+            font-family: Kaiti;
+            font-size: 40px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box</div>
+    <div class="box3">box3</div>
+    <div class="a1">
+        <a href="">百度</a>
+    </div>
+
+</body>
+
+</html>

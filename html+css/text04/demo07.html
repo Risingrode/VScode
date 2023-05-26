@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /*层级选择器*/
+        
+        li {
+            list-style: none;
+            /*去除黑点*/
+            border: 2px solid white;
+            box-sizing: border-box;
+        }
+        
+        .menu>li {
+            float: left;
+            border: 2px solid red;
+            height: 25px;
+            margin: 20px 20px 0 20px;
+        }
+        
+        .menu .sub-menu ul {
+            height: 0px;
+            overflow: hidden;
+            background-color: blueviolet;
+            transition: height 1s;
+        }
+        
+        .menu .sub-menu:hover>ul {
+            height: 75px;
+        }
+        /*overflow  内容超出文本框 ，将其进行隐藏*/
+    </style>
+</head>
+
+
+<body>
+    <ul class="menu">
+        <li class="sub-menu">
+            书籍
+            <ul>
+                <li>js高级程序设计</li>
+                <li>java高级程序设计</li>
+                <li>C++高级程序设计</li>
+            </ul>
+        </li>
+        <li class="sub-menu">
+            书籍
+            <ul>
+                <li>js高级程序设计</li>
+                <li>java高级程序设计</li>
+                <li>C++高级程序设计</li>
+            </ul>
+        </li>
+        <li class="sub-menu">
+            书籍
+            <ul>
+                <li>js高级程序设计</li>
+                <li>java高级程序设计</li>
+                <li>C++高级程序设计</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

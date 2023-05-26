@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+const student = {
+    name:"小明",
+    age:12,
+    [Symbol("level")]:"优秀",
+    [Symbol("level")]:"有钱",
+}
+Object.defineProperty(student,"gender",{
+    configurable: false, //属性是否可以删除
+    enumerable: false,   //属性是否可枚举
+    value: "男",      //属性值
+    writable: false     //属性是否可以修改
+})
+// symList数组，包含了对象的所有symbol类型的属性
+// const symList = Object.getOwnPropertySymbols(student);
+// for(let symPro of symList){
+//     console.log(Object.getOwnPropertyDescriptor(student,symPro))
+// }
+
+// 可枚举、不可枚举、symbol
+/* 
+    for in:可以获取可枚举的属性，不包括symbol
+    Object.keys():可以获取可枚举的属性，不包括symbol
+    Object.getOwnPropertyNames();获取所有属性，不包括symbol
+    Object.assign();赋值可枚举的属性，包括Symbol的
+    JSON.stringify();可以获取可枚举的属性，不包括symbol
+*/
+
+console.log(JSON.stringify(student));
+
+
+let list = [1,2,3];
+
+list[Symbol.iterator];
+
+</script>
+</body>
+</html>

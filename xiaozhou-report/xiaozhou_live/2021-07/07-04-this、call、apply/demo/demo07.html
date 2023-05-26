@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 继承：子类可以使用父类的方法
+function Animal(){
+    // this指向小cat
+    this.eat = function(){
+        console.log("吃东西")
+    }
+}
+
+function Bird(){
+    this.fly = function(){
+        console.log("飞翔")
+    }
+}
+
+function Cat(){
+    // this指向小cat
+    Animal.call(this);
+    Bird.call(this);
+    this.sayName = function(){
+        console.log("输出自己的名字")
+    }
+}
+
+let cat = new Cat();
+cat.fly();
+
+</script>
+</body>
+</html>

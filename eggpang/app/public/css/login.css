@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.box {
+    margin: 0 30px 20px 40px;
+}
+
+.box .test {
+    border: 3px solid rgb(155, 11, 11);
+}
+
+.box .title {
+    margin: 20px;
+    border: 2px solid blue;
+}

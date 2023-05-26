@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 可枚举，不可枚举
+const student = {
+    name:"小明",
+    age:12,
+    [Symbol("level")]:"优秀",
+    [Symbol("level")]:"有钱",
+}
+
+// const val = Object.getOwnPropertyDescriptor(student,"name");
+// console.log(val);
+/* 
+{
+    configurable: true //属性是否可以删除
+    enumerable: true   //属性是否可枚举
+    value: "小明"      //属性值
+    writable: true     //属性是否可以修改
+}
+*/
+
+Object.defineProperty(student,"gender",{
+    configurable: false, //属性是否可以删除
+    enumerable: false,   //属性是否可枚举
+    value: "男",      //属性值
+    writable: false     //属性是否可以修改
+})
+
+// delete student.gender;
+// student.gender = "女"
+// console.log(student);
+console.log(student.__proto__);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="mid"></p>
+    <p>
+        <img id="avatar" src="" alt="">
+        <span id="uname"></span>
+    </p>
+    <p id="message"></p>
+    <button>开始抽奖</button>
+    <script src="data.js"></script>
+    <script>
+        let temp = {};
+        let mList = [];
+        list.map((val) => {
+            // console.log(val);
+            if(!temp[val.mid]){
+                temp[val.mid] = true;
+                mList.push(val);
+            }
+        })
+        let len = mList.length;
+        let EleMid = document.querySelector("#mid")
+        let EleAvatar = document.querySelector("#avatar")
+        let EleUname = document.querySelector("#uname")
+        let EleMessage = document.querySelector("#message")
+        document.querySelector("button").onclick = function(){
+            let t = setInterval(() => {
+                let ramdom = Math.floor(Math.random() * len)
+                EleMid.innerHTML = mList[ramdom].mid;
+                EleAvatar.src = mList[ramdom].avatar;
+                EleUname.innerHTML = mList[ramdom].uname;
+                EleMessage.innerHTML = mList[ramdom].message;
+            },100)
+            setTimeout(() => {
+                console.log("幸运的小伙伴已经产生！")
+                clearInterval(t);
+            },3000)
+        }
+    </script>
+</body>
+</html>

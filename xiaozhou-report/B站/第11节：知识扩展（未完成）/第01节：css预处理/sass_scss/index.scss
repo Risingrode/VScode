@@ -1,0 +1,36 @@
+$bgc:blue;
+$textColor:red;
+
+@mixin box($height){
+    width: 1000px;
+    height:$height;
+    background-color: $bgc;
+    margin:0 auto;
+}
+
+.textSty{
+    color:$textColor;
+    text-align: center;
+    font-size:20px;
+}
+
+.header{
+    @include box(80px);
+    .title{
+        @extend .textSty
+    }
+}
+
+.container{
+    @include box(600px);
+    .title{
+        @extend .textSty
+    }
+}
+
+.footer{
+    @include box(80px);
+    .title{
+        @extend .textSty
+    }
+}

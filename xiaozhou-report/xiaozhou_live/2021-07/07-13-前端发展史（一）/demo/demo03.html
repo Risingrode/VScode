@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <button id="btn">添加</button>
+    <ul>
+        <li class="fruit">香蕉</li>
+        <li class="fruit">苹果</li>
+        <li class="fruit">鸭梨</li>
+    </ul>
+
+<script>
+
+let li = document.querySelectorAll("li");
+let ul = document.querySelector("ul")
+let btn = document.querySelector("#btn")
+btn.onclick = function(){
+    let txt = document.querySelector("#txt")
+    let li = document.createElement("li");
+    li.innerHTML = txt.value;
+    ul.appendChild(li);
+}
+
+ul.onclick = function(e){
+    // if(e.target.className === "fruit"){
+    //     ul.removeChild(e.target)
+    // }
+    console.log(e);
+}
+
+// for(let i = 0;i<li.length;i++){
+//     li[i].onclick = function(){
+//         ul.removeChild(this);
+//     }
+// }
+// 利用事件委托来实现删除
+// let ul = document.querySelector("ul")
+
+</script>
+</body>
+</html>

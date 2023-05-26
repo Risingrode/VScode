@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// Symbol
+// js的数据类型：数值，字符串，布尔，对象，null
+// undefined，Symbol
+
+// const sym = Symbol("abc")
+// console.log(sym);
+
+// symbol可以当做对象的属性名
+// 对象：key value对
+
+
+const student = {
+    name:"小明",
+    age:12,
+    [Symbol("level")]:"优秀",
+    [Symbol("level")]:"有钱",
+}
+
+// console.log(Object.keys(student));
+
+// let pros = Object.getOwnPropertyNames(student)
+// console.log(pros);
+
+// for(let pro in student){
+//     console.log(pro)
+// }
+
+// let symList = Object.getOwnPropertySymbols(student);
+// for(let pro of symList){
+//     console.log(student[pro])
+// }
+
+
+
+
+// console.log(student);
+// for(let pro in student){
+//     console.log(pro);
+// }
+
+// console.log(student[level])
+// symbol属性不能被for...in获取
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+2022-04-05 15:36:21,320 INFO 11520 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:36:21,320 INFO 11520 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:36:21,320 INFO 11520 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:36:21,653 INFO 23824 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 46418350ms at 2022-04-06 04:30:00.003
+2022-04-05 15:36:21,653 INFO 23824 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 30218347ms at 2022-04-06 00:00:00.000
+2022-04-05 15:36:21,653 INFO 23824 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 30219347ms at 2022-04-06 00:00:01.000
+2022-04-05 15:41:26,470 INFO 12156 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:41:26,470 INFO 12156 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:41:26,470 INFO 12156 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:41:26,805 INFO 23188 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 46113198ms at 2022-04-06 04:30:00.002
+2022-04-05 15:41:26,805 INFO 23188 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 29913195ms at 2022-04-06 00:00:00.000
+2022-04-05 15:41:26,805 INFO 23188 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 29914195ms at 2022-04-06 00:00:01.000
+2022-04-05 15:41:31,426 INFO 20356 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:41:31,426 INFO 20356 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:41:31,426 INFO 20356 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:44:02,394 INFO 4592 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:44:02,394 INFO 4592 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:44:02,395 INFO 4592 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:44:21,741 INFO 8744 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:44:21,741 INFO 8744 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:44:21,742 INFO 8744 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:44:46,055 INFO 24256 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:44:46,055 INFO 24256 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:44:46,055 INFO 24256 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:44:58,245 INFO 12848 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:44:58,245 INFO 12848 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:44:58,245 INFO 12848 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:45:45,218 INFO 26068 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:45:45,218 INFO 26068 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:45:45,218 INFO 26068 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:47:32,245 INFO 23184 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:47:32,245 INFO 23184 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:47:32,245 INFO 23184 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 15:48:46,477 INFO 21148 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 15:48:46,477 INFO 21148 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 15:48:46,477 INFO 21148 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 17:08:31,455 INFO 24252 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 40888548ms at 2022-04-06 04:30:00.003
+2022-04-05 17:08:31,455 INFO 24252 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 24688545ms at 2022-04-06 00:00:00.000
+2022-04-05 17:08:31,455 INFO 24252 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 24689545ms at 2022-04-06 00:00:01.000
+2022-04-05 17:08:31,056 INFO 10104 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 17:08:31,056 INFO 10104 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 17:08:31,057 INFO 10104 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 17:08:34,478 INFO 25632 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 17:08:34,479 INFO 25632 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 17:08:34,479 INFO 25632 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 17:11:20,516 INFO 25200 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 40719488ms at 2022-04-06 04:30:00.003
+2022-04-05 17:11:20,516 INFO 25200 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 24519484ms at 2022-04-06 00:00:00.000
+2022-04-05 17:11:20,516 INFO 25200 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 24520484ms at 2022-04-06 00:00:01.000
+2022-04-05 17:11:20,170 INFO 24464 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 17:11:20,170 INFO 24464 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 17:11:20,170 INFO 24464 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 17:13:12,705 INFO 11788 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 40607299ms at 2022-04-06 04:30:00.004
+2022-04-05 17:13:12,705 INFO 11788 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 24407295ms at 2022-04-06 00:00:00.000
+2022-04-05 17:13:12,705 INFO 11788 [Timer] D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 24408295ms at 2022-04-06 00:00:01.000
+2022-04-05 17:13:12,322 INFO 14060 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 17:13:12,322 INFO 14060 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 17:13:12,323 INFO 14060 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 17:16:25,851 INFO 24412 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 17:16:25,851 INFO 24412 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 17:16:25,851 INFO 24412 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2022-04-05 17:18:30,561 INFO 21452 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-multipart@2.13.1@egg-multipart\app\schedule\clean_tmpdir.js
+2022-04-05 17:18:30,562 INFO 21452 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2022-04-05 17:18:30,562 INFO 21452 [egg-schedule]: register schedule D:\VS_code代码\Egg\text02\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>手把手教你学Vue3</h1>
+    <div id="app">
+        <form @submit.prevent="postData">
+            <input type="text" v-model="name">
+            <input type="text" v-model.number="price">
+            <button>添加</button>
+        </form>
+        <ul>
+            <li v-for="item,index in list">
+                名称：{{item.name}};
+                单价：{{item.price}};
+                数量：
+                <button @click="decrease(index)">-</button>
+                {{item.count}}
+                <button @click="increase(index)">+</button>
+            </li>
+        </ul>
+        <h3>总价：{{totalPrice}}</h3>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    list:[],
+                    name:"",
+                    price:0,
+                }
+            },
+            // 计算属性
+            computed:{
+                totalPrice(){
+                    let sum = 0;
+                    this.list.forEach( v => {
+                        sum += (v.price * v.count);
+                    })
+                    return sum;
+                }
+            },
+            methods: {
+                postData(){
+                    this.list.push({
+                        name:this.name,
+                        price:this.price,
+                        count:1
+                    })
+                },
+                increase(i){
+                    this.list[i].count++
+                },
+                decrease(i){
+                    let count = --this.list[i].count
+                    if(count <= 0 && confirm("是否删除？")){
+                        this.list.splice(i,1)
+                    }
+                }
+            }
+        }).mount("#app")
+    </script>
+</body>
+
+</html>

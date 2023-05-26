@@ -1,0 +1,9 @@
+<template>
+    <ul>
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>鸭梨</li>
+        <li>芒果</li>
+        <li>水蜜桃</li>
+    </ul>
+</template>

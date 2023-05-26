@@ -1,0 +1,17 @@
+2022-04-05 15:48:09,543 ERROR 23184 [-/127.0.0.1/-/17ms GET /] nodejs.Template render error: (D:\VS_code代码\Egg\text02\app\view\index.html)
+  unexpected end of file
+  unexpected end of file
+    at Object._prettifyError (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\lib.js:36:11)
+    at Template.render (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\environment.js:538:21)
+    at D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\environment.js:366:27
+    at createTemplate (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\environment.js:315:9)
+    at handle (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\environment.js:327:11)
+    at D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\environment.js:339:9
+    at next (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\lib.js:328:7)
+    at Object.asyncIter (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\lib.js:334:3)
+    at NunjucksEnvironment.getTemplate (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\environment.js:321:9)
+    at NunjucksEnvironment.render (D:\VS_code代码\Egg\text02\node_modules\_nunjucks@3.2.3@nunjucks\src\environment.js:360:10)
+name: "Template render error"
+pid: 23184
+hostname: Lenovo-cw
+

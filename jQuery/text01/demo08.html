@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="show">显示</button>
+    <button class="hide">隐藏</button>
+    <div class="box"></div>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(".show").click(function() {
+            $(".box").show(500); /*动画延迟效果 以毫秒计*/
+            // $(".box").fideIn(500);
+        })
+        $(".hide").click(function() {
+            $(".box").hide(500);
+
+        })
+    </script>
+</body>
+
+</html>

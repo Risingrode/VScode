@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="http://baidu.com">baidu</a>
+    <script>
+        //阻止事件的默认行为
+        let a = document.querySelector("a");
+        a.onclick = function(e) {
+            console.log("hellow,world");
+            //e.preventDefault();
+            //法二
+            return false;
+        }
+    </script>
+</body>
+
+</html>

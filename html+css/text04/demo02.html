@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--H5 布局元素 相当于一个有语义的div
+    header :网页头部
+    nav: 导航栏
+    aside :侧标栏
+    section: 布局的一部分
+    artical :显示文章
+    footer :网页页脚-->
+<style>
+    header {
+        width: 80px;
+        border: 2px solid white;
+        margin: 20px auto 20px auto;
+        /*居中*/
+    }
+    
+    video {
+        display: block;
+        margin: 30px auto;
+    }
+    
+    audio {
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .box1 {
+        width: 190px;
+        height: 100px;
+        margin: 0 auto;
+    }
+</style>
+<!--媒体元素  audio 音频 video 视频
+    媒体元素属性 controls(播放音乐，视频)   autoplay(视频自动播放)  muted(视频静音)-->
+
+<body>
+    <header>网页头部</header>
+    <div class="box">
+        <video src="" controls class="vid"></video>
+        <audio src="music/樊雷 - 秋殇别恋.mp3" controls class="music"></audio>
+    </div>
+    <div class="box1">
+        <button class="start">播放</button>
+        <button class="pause">暂停</button>
+    </div>
+    <script>
+        let start = document.querySelector("start");
+        let pause = document.querySelector("pause");
+        let music = document.querySelector("music");
+        // start.onclick() = function() {
+        //     music.innerHTML.controls;
+        // }
+    </script>
+</body>
+
+</html>
